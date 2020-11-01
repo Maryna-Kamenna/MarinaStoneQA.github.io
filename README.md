@@ -35,8 +35,7 @@
     <li>Jira, Trello, TestRail, CRM</li>
    </ul>
 </div>
-   
-          <h3>Soft skills</h3>
+     <h3>Soft skills</h3>
       <div>
          <ul>
              <li>English (intermediate)</li>
@@ -64,8 +63,7 @@
       <h3>Make-up artist  Freelancer</h3>
       <h4>Desember 2015 - March 2018</h4>
    </section>
-
-      <h3>Ukrticket Theater casher</h3>
+<h3>Ukrticket Theater casher</h3>
       <h4>November 2013 - October 2015</h4>  
          <ul>
              <li>Increased recognizably and number of customers at the point of sale</li>
@@ -82,8 +80,7 @@
               <li>Providing telephone reception of customer orders</li>
           </ul>
          </article>
-      
-          <h2>Education</h2>
+        <h2>Education</h2>
           <section>
                <h3>Odessa National University of I.I Mechnikov</h3>
                  <h4>September 2006 - June 2014 Obtained the MS degree in Since Sociology</h4>
@@ -109,7 +106,6 @@
                   <footer>
                            <p>© 2020 KAMENNA MARYNA</p>
                   </footer>
-
          </body>
       </head>
   </html>
