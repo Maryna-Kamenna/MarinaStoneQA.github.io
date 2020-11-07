@@ -1,0 +1,15 @@
+* 
+
+    a:focus,
+    input:focus {
+    color: black;
+    border:2px dashed black;
+    
+}
+
+{
+    font-size:18px;
+    color:pixie; 
+
+}
+
