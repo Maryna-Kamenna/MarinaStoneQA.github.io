@@ -2,42 +2,39 @@
 {
     background: #990909;
 }
-
-.title1{
-        text-align: center;
+.company{
+    text-align: center;
+}
     }
 .text2{
     font-size: 18px;
     color: white;
 }
 .icons{
-    -ms-flex-line-pack: center;
-    width:10%; 
-    height:auto;  
+    flex-direction: row; 
     background:black;
 }
-
 .marina1{
-    margin-right: 20px;
-
+     width: 100px;
+    height: 222px;
 }
 .marina2{
-    margin-right: 20px;
-
+    width: 100px;
+   height: 222px;
 }
 .marina3{
-    margin-right: 1px;
-
+    width: 100px;
+   height: 222px;
 }
 .marina4{
-    margin-right: 1px;
+    width: 100px;
+   height: 222px;
+}
 
 }
 .links{
-    margin: 0 auto;
     background: #7D0909;
-    padding: 100px;
-    width: 200px;
+    padding: 150px;
     float: left;
 }
 
@@ -46,7 +43,6 @@
     padding: 100px;
     width: 200px;
     float: right;
-    color:#490000 ;
 
 }
 
@@ -70,17 +66,17 @@
 
 }
 
-.text3{
+.blabla{
     margin-bottom: 20px;
     font-size: 20px;
     color: white;
 }
-.text4{
+.blablab{
     margin-bottom: 20px;
     font-size: 20px;
     color: white;
 }
-.text5{
+.blablaba{
     margin-bottom: 20px;
     font-size: 20px;
     color: white;

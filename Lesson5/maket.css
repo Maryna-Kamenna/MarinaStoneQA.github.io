@@ -1,0 +1,15 @@
+* 
+.body {
+    background-color: #1d1c1c;
+
+}
+.wrapper{
+    max-width: 1140;
+    display: flex;
+    margin: auto;
+
+}
+.boxes{
+    flex: 1;
+    
+}
