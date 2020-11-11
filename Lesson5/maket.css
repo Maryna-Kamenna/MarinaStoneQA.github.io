@@ -1,15 +1,36 @@
 * 
 .body {
-    background-color: #1d1c1c;
-
+    background-color: #1D1C1C;
 }
+
 .wrapper{
     max-width: 1140;
     display: flex;
     margin: auto;
-
+    background-color: #1D1C1C;
 }
+
+
 .boxes{
     flex: 1;
     
+}
+.box-icon{
+
+}
+.icon{
+    text-align: center;
+        
+}
+
+.title{
+    color: #CAB0B0;
+
+   
+}
+.description{
+    font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+    color: #CAB0B0;
+
 }
