@@ -1,0 +1,43 @@
+.wrapper{
+    max-width: 1500px;
+    display: flex;
+    margin: auto;
+    background-color:#ffffff ;
+    background: linear-gradient(to right, #ffe5e5b3 70%, #ffffff 0);
+    background-size: 70px 100%;
+
+}
+
+.circle{
+    width: 56px;
+    height: 56px;
+    background-color:#2a69a6;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: auto;
+    flex: 1;
+   
+}
+
+.circle:hover{
+    background-color: white;
+    border-color: #2a69a6;
+}
+i{
+    margin: 17px;
+    font-size: 20px;
+    color: white;
+}
+i:hover{
+    color:#2a69a6;
+}
+.sec{
+    width: 220px;
+    height: 167px;
+    text-align: center;
+}
+
+h2,p{
+    font-size: 14px;
+    font-family: Myriad Pro Regular;
+}

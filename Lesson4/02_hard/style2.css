@@ -5,22 +5,25 @@
 .company{
     text-align: center;
 }
-    }
+
 .text2{
+    text-align: center;
     font-size: 18px;
     color: white;
 }
-.icons{
-    flex-direction: row; 
-    background:black;
+.nav{
+    display: flex;
+    background-color:black ;
 }
 
-
+.marina${
+    text-align:center;
 }
-.links{
-    width: 200px;
+
+.links{ 
+    background-color: #7D0909;
     float: left;
-   
+    width: 200px;
 }
 
 .linksright{  margin: 0 auto;
@@ -32,6 +35,7 @@
 .fon{
     background-color: #E3DDDD;
 }
+
 .colomn{
     background-color: #BDBDBD;
     font-size: 18px;
