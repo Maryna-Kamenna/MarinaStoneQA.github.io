@@ -1,12 +1,19 @@
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/proximanova-regular.eot');
+	src: local('☺'), url('../fonts/proximanova-regular.woff') format('woff'), url('fonts/proximanova-regular.ttf') format('truetype'), url('fonts/proximanova-regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 .wrapper{
-    max-width: 1500px;
+    max-width: 1095px;
+    height: 297px;
     display: flex;
     margin: auto;
     background-color:#ffffff ;
     background: linear-gradient(to right, #ffe5e5b3 70%, #ffffff 0);
     background-size: 70px 100%;
-
-}
+} 
 
 .circle{
     width: 56px;
@@ -16,28 +23,31 @@
     border-radius: 50%;
     margin: auto;
     flex: 1;
-   
 }
 
 .circle:hover{
     background-color: white;
     border-color: #2a69a6;
 }
+
 i{
     margin: 17px;
     font-size: 20px;
     color: white;
 }
+
 i:hover{
     color:#2a69a6;
 }
+
 .sec{
     width: 220px;
     height: 167px;
     text-align: center;
+    margin: auto;
 }
 
 h2,p{
     font-size: 14px;
-    font-family: Myriad Pro Regular;
+    font-family: ProximaNova-regular,sans-serif;
 }

@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 .wrapper{
     max-width: 1654px;
     display: flex;
@@ -15,8 +15,8 @@
 }
 
 .icon {
-    width: 80px;
-    height: 80px;
+   width: 90px;
+   height: 90px;
     border: 2px solid orange;
     background-color: orange;
     border-radius: 25% 0 25% 0;

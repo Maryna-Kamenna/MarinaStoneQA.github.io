@@ -1,0 +1,61 @@
+*{transition: all .1s ease-in;}
+body{
+    background-color: #2F9ACD;
+    border:20px solid #2782AE;
+}
+h2{
+    font-family: Lucida Sans Unicode”, sans-serif;
+    color: white;
+
+}
+h3{
+    color: white;
+
+}
+.wrapper{
+
+}
+.table{
+  width: 22%;
+  height: 100%;
+  background: rgba(228, 218, 218, 0.4); /* перевести HEX в RGB */ 
+  margin: 0%;
+  padding: 10px;
+  text-align: center; 
+}
+li{
+    display: inline-block;
+}
+.Lisbon{
+
+}
+.Paris{
+
+}
+.Belgrade{
+
+}
+.Moscow{
+
+}
+.Tel_Aviv{
+
+}
+.Cair{
+
+}
+.New_York{
+
+}
+.New_Delhi{
+
+}
+.San_Francisco{
+
+}
+.Tokyo{
+
+}
+.Cidney{
+
+}

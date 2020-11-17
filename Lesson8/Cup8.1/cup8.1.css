@@ -1,0 +1,21 @@
+.wrapper{
+    max-width: 1200px;
+    height: 600px;
+    background-color: #FDDE7E;
+}
+.conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+ 
+.cup1{
+    
+}
+
+.cup2{ 
+}
+
+.cup3{ 
+}
