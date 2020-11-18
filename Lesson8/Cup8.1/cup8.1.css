@@ -1,21 +1,112 @@
+body{
+    display: block;
+}
 .wrapper{
     max-width: 1200px;
     height: 600px;
     background-color: #FDDE7E;
 }
+
 .conteiner{
+    width: 1200px;
+    height: 600px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
+    padding: 20px;
+    align-items: flex-start
 }
  
 .cup1{
-    
+    align-self: center;
+    width: 441px;
+    height: 360px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
 }
 
-.cup2{ 
+.cup2{  
+    width: 441px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
 }
 
 .cup3{ 
+    align-self: center;
+    width: 441px;
+    height: 360px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.price{
+ padding: 10px;
+ padding-top: 25px;
+
+
+}
+
+.cup{
+    /* Style for "cup" */
+width: 135px;
+height: 77px;
+
+}
+
+.smoke{
+    /* Style for "smoke" */
+width: 49px;
+height: 46px;
+padding: 20px;
+
+
+}
+
+.bean2{
+    /* Style for "bean" */
+    width: 37px;
+    height: 45px;
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: 255px; /* Положение от нижнего края */
+    right: 235px;
+    top: 335px;
+    left: 1002px;
+}
+.bean1{
+    width: 37px;
+    height: 45px;
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: 270px; /* Положение от нижнего края */
+    right: 600px;
+    top: 240px;
+    left: 600px;
+}
+.bean{
+    width: 37px;
+    height: 45px;
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: 255px; /* Положение от нижнего края */
+    right: 1035px;
+    top: 335px;
+    left: 203px;
+
+}
+
+p{
+    font-family: Miso,sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+span{
+    font-family: Miso,sans-serif;
+    font-size: 18px;
+    font-weight: 300;
 }

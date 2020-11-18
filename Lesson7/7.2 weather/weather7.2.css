@@ -13,12 +13,14 @@ h3{
 
 }
 .wrapper{
+    display: block;
+    width: 985px;
+    height: 625px;
 
 }
 .table{
   width: 22%;
   height: 100%;
-  background: rgba(228, 218, 218, 0.4); /* перевести HEX в RGB */ 
   margin: 0%;
   padding: 10px;
   text-align: center; 
@@ -27,35 +29,97 @@ li{
     display: inline-block;
 }
 .Lisbon{
+    width: 50%;
+    height: 25%;
+    padding: 10%;
+    border: 2px solid rgb(252, 252, 252);        
+    background-color: rgb(0, 4, 255); 
 
 }
 .Paris{
+    width: 25%;
+    height: 25%;
+    padding: 15px;
+    border: 2px solid rgb(250, 250, 250);
+    background-color: rgb(50, 207, 212); 
 
 }
 .Belgrade{
+    display: inline-block;
+    width: 25%;
+    height: 25%;
+    padding: 15px;
+    border: 2px solid rgb(248, 248, 248);
+    background-color: rgb(172, 26, 159); 
 
 }
 .Moscow{
+    display: inline-block;
+    width: 25%;
+    height: 25%;
+    padding: 15px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(224, 40, 40); 
 
 }
 .Tel_Aviv{
+    display: inline-block;
+    width: 25%;
+    height: 25%;
+    padding: 15px;
+    border: 2px solid rgb(252, 252, 255);
+    background-color: rgb(206, 100, 39); 
 
 }
 .Cair{
+    display: inline-block;
+    width: 25%;
+    height: 25%;
+    padding: 15px;
+    border: 2px solid rgb(252, 252, 252);
+    background-color: rgb(216, 216, 58); 
 
 }
 .New_York{
+    width: 25%;
+    height: 25%;
+    padding: 15px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(70, 190, 34); 
 
 }
 .New_Delhi{
+    display: inline-block;
+    width: 25%;
+    height: 25%;
+    padding: 15px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(81, 212, 131); 
 
 }
 .San_Francisco{
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+    padding: 15px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(173, 18, 127); 
 
 }
 .Tokyo{
+    display: inline-block;
+    width: 25%;
+    height: 25%;
+    padding: 15px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(16, 151, 23); 
 
 }
-.Cidney{
+.Cidney{    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(59, 21, 163); 
 
 }
