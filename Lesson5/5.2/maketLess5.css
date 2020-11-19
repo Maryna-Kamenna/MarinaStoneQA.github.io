@@ -1,0 +1,44 @@
+
+.wrapper {
+  max-width: 1654px;
+  display: flex;
+  background-color: #1d1c1c;
+  margin: auto;
+  background: linear-gradient(to right, #341919 70%, #1d1c1c 0);
+  background-size: 70px 100%;
+}
+
+.boxes {
+  flex: 1;
+  text-align: center;
+  margin: 55px 0 0 0;
+}
+
+.icon {
+  width: 90px;
+  height: 90px;
+  border: 2px solid orange;
+  background-color: orange;
+  border-radius: 25% 0 25% 0;
+  margin: auto;
+  flex: 1;
+}
+i {
+  margin: 28px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 24px;
+}
+
+.description {
+  text-align: center;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 14px;
+}

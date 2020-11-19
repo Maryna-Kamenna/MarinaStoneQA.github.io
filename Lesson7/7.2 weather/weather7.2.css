@@ -3,11 +3,12 @@ body{
     background-color: #2F9ACD;
     border:20px solid #2782AE;
 }
+
 h2{
     font-family: Lucida Sans Unicode”, sans-serif;
     color: white;
-
 }
+
 h3{
     color: white;
 
@@ -115,7 +116,8 @@ li{
     background-color: rgb(16, 151, 23); 
 
 }
-.Cidney{    display: inline-block;
+.Cidney{   
+    display: inline-block;
     width: 100%;
     height: 100%;
     padding: 15px;

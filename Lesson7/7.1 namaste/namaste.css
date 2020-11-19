@@ -10,35 +10,38 @@
 h4{
   text-align: center;
   font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+
 }
 
 h1{
   color: #26b4b7;
   font-size: 48px;
   text-align: center;
-  font-family: Montserrat-regular,sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 h3{
   text-align: center;
   font-size: 18px;
   margin-bottom: 100px;
-  font-family: PTSans-Regular,sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
 }
 
 h2{
   text-align: center;
   font-size: 21px;
-  font-family: Montserrat-Regular,sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 
 .size{
-    min-height: 150px;
-    font-size: 16px;
+    font-size: 14px;
     vertical-align: middle;
-    font-family: PTSans-Regular,sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-weight: 400;
 }
 
