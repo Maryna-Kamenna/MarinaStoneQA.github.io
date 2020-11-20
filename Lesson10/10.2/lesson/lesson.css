@@ -1,0 +1,43 @@
+* body {
+  background: url(bg.jpg);
+}
+.conteiner {
+  max-width: 1020px;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.q {
+  background-color: #578718;
+  width: 230px;
+  margin: 0;
+  padding: 20px;
+  margin-bottom: 80px;
+  padding-left: 40px;
+  transform: translate(-19, 19px);
+}
+.q2 {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+}
+.quote1, .quote2, .quote3, .quote4 {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+}
+.quote5,
+.quote7 {
+  margin-right: 167px;
+}
+.quote2 {
+  top: 400px;
+  background-color: blue;
+  z-index: 1;
+}
+.qote4 {
+}

@@ -1,127 +1,142 @@
 *{transition: all .1s ease-in;}
+*{
+    box-sizing:border-box;
+}
+
 body{
+    display: block;
+    margin: 8px;
     background-color: #2F9ACD;
     border:20px solid #2782AE;
 }
 
-h2{
+h1{
     font-family: Lucida Sans Unicode”, sans-serif;
     color: white;
+    font-size: 26px;
 }
 
-h3{
-    color: white;
-
-}
 .wrapper{
-    display: block;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     width: 985px;
     height: 625px;
-
 }
+
 .table{
-  width: 22%;
-  height: 100%;
-  margin: 0%;
-  padding: 10px;
-  text-align: center; 
+  font-size: 0;
+  margin:0 auto;
+  padding: 0;
+  background-color: #ffffff;
+
 }
+
 li{
-    display: inline-block;
-}
+    display:inline-block;
+    font-family: lucida-sans-unicode,lucida-grande;
+    color:#ffffff;
+    font-size: 20px;
+     /* border:6px solid #ffffff;  */
+    text-align: center;
+    padding-top: 15px;}
+
 .Lisbon{
+    text-align: center;
     width: 50%;
-    height: 25%;
-    padding: 10%;
-    border: 2px solid rgb(252, 252, 252);        
+    padding: 15px;
+    border: 4px solid rgb(252, 252, 252);        
     background-color: rgb(0, 4, 255); 
-
+    
 }
+
 .Paris{
+    text-align: center;
     width: 25%;
-    height: 25%;
     padding: 15px;
-    border: 2px solid rgb(250, 250, 250);
+    border: 4px solid rgb(250, 250, 250);
     background-color: rgb(50, 207, 212); 
-
 }
+
 .Belgrade{
-    display: inline-block;
+    text-align: center;
     width: 25%;
-    height: 25%;
     padding: 15px;
-    border: 2px solid rgb(248, 248, 248);
+    border: 4px solid rgb(248, 248, 248);
     background-color: rgb(172, 26, 159); 
-
 }
+
 .Moscow{
-    display: inline-block;
+    text-align: center;
     width: 25%;
-    height: 25%;
     padding: 15px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 4px solid rgb(255, 255, 255);
     background-color: rgb(224, 40, 40); 
-
 }
+
 .Tel_Aviv{
-    display: inline-block;
+    text-align: center;
     width: 25%;
-    height: 25%;
     padding: 15px;
-    border: 2px solid rgb(252, 252, 255);
+    border: 4px solid rgb(252, 252, 255);
     background-color: rgb(206, 100, 39); 
-
 }
+
 .Cair{
-    display: inline-block;
+    text-align: center;
     width: 25%;
-    height: 25%;
     padding: 15px;
-    border: 2px solid rgb(252, 252, 252);
+    border: 4px solid rgb(252, 252, 252);
     background-color: rgb(216, 216, 58); 
-
 }
+
 .New_York{
+    text-align: center;
     width: 25%;
-    height: 25%;
     padding: 15px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 4px solid rgb(255, 255, 255);
     background-color: rgb(70, 190, 34); 
-
 }
+
 .New_Delhi{
-    display: inline-block;
+    text-align: center;
     width: 25%;
-    height: 25%;
     padding: 15px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 4px solid rgb(255, 255, 255);
     background-color: rgb(81, 212, 131); 
-
 }
+
 .San_Francisco{
-    display: inline-block;
+    text-align: center;
     width: 50%;
-    height: 50%;
     padding: 15px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 4px solid rgb(255, 255, 255);
     background-color: rgb(173, 18, 127); 
-
 }
-.Tokyo{
-    display: inline-block;
+
+.Tokyo{   
+    text-align: center;
     width: 25%;
-    height: 25%;
     padding: 15px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 4px solid rgb(255, 255, 255);
     background-color: rgb(16, 151, 23); 
-
 }
-.Cidney{   
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    padding: 15px;
-    border: 2px solid rgb(255, 255, 255);
-    background-color: rgb(59, 21, 163); 
 
+.Cidney{  
+    text-align: center; 
+    width: 100%;
+    padding: 15px;
+    border: 4px solid rgb(255, 255, 255);
+    background-color: rgb(59, 21, 163); 
+}
+
+ul:hover li:not(:hover){
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    opacity:0.3;
+}
+
+footer{
+    font-family: Lucida Sans Unicode”, sans-serif;
+    color: white;
+    font-size: 22px;
 }
