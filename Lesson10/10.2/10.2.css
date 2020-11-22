@@ -23,9 +23,9 @@ hr{
     color: #dddbdb;
 }
 h2{
+    padding-bottom: 30px;
     text-align: center;
     font-size: 16px;
-    font: 300;
     font-family: font-family: 'Lato', sans-serif;
 }
 
@@ -43,11 +43,11 @@ li${
     display: inline-block;
 }
 
-a.rollover{
+a.rollover{    
     background: url(lisa.png); /* Путь к файлу с исходным рисунком  */
     display: block; /*  Рисунок как блочный элемент */
     width: 269px; /* Ширина рисунка */
-    height: 269px; /*  Высота рисунка */
+    height: 268px; /*  Высота рисунка */
    }
    a.rollover:hover {
     background: url(lisahover.png); /* Путь к файлу с заменяемым рисунком  */
@@ -57,7 +57,7 @@ a.rollover{
     background: url(alex.png); /* Путь к файлу с исходным рисунком  */
     display: block; /*  Рисунок как блочный элемент */
     width: 269px; /* Ширина рисунка */
-    height: 269px; /*  Высота рисунка */
+    height: 268px; /*  Высота рисунка */
    }
    a.rollover1:hover {
     background: url(lisahover.png); /* Путь к файлу с заменяемым рисунком  */
@@ -67,7 +67,7 @@ a.rollover{
     background: url(elena.png); /* Путь к файлу с исходным рисунком  */
     display: block; /*  Рисунок как блочный элемент */
     width: 269px; /* Ширина рисунка */
-    height: 269px; /*  Высота рисунка */
+    height: 268px; /*  Высота рисунка */
    }
    a.rollover2:hover {
     background: url(lisahover.png); /* Путь к файлу с заменяемым рисунком  */
@@ -77,13 +77,12 @@ a.rollover{
     background: url(lily.png); /* Путь к файлу с исходным рисунком  */
     display: block; /*  Рисунок как блочный элемент */
     width: 269px; /* Ширина рисунка */
-    height: 269px; /*  Высота рисунка */
+    height: 268px; /*  Высота рисунка */
    }
    a.rollover3:hover {
     background: url(lisahover.png); /* Путь к файлу с заменяемым рисунком  */
    }
 
-/*   а это по идее картинка с  активными иконками
 .social a {
     text-align: center;
     width: 42px;
@@ -110,9 +109,9 @@ a.rollover{
     background: #5ecbe6; color: #fff;
 }
 
-.rec_bloc {
+.Backside {
+  display: flex;
   width: 269px;
   height: 269px;
   background: url("hover.png");
 }  
-*/

@@ -1,73 +1,77 @@
-*.wrapper{
-    width: 940px;
-    height: 980px;
-    margin: auto;
-    background-color:#ffffff ;
-    background: linear-gradient(to right,#ffe5e5 70%, #ffffff 0);
-    background-size: 70px 100%;
+*.wrapper {
+  width: 940px;
+  height: 980px;
+  margin: auto;
+  background-color: #ffffff;
+  background: linear-gradient(to right, #ffe5e5 70%, #ffffff 0);
+  background-size: 70px 100%;
 }
 
-h4{
+h4 {
   text-align: center;
   font-size: 12px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
-
 }
 
-h1{
+h1 {
   color: #26b4b7;
   font-size: 48px;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
-h3{
+h3 {
+  color: #999999;
   text-align: center;
   font-size: 18px;
   margin-bottom: 100px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0;
 }
 
-h2{
+h2 {
+  color: #1b1b1b;
   text-align: center;
   font-size: 21px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.size {
+  color: #777777;
+  font-size: 14px;
+  vertical-align: middle;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
 }
 
-.size{
-    font-size: 14px;
-    vertical-align: middle;
-    font-family: 'PT Sans', sans-serif;
-    font-weight: 400;
-}
-
-ul{
+ul {
   height: 423px;
   width: 912px;
 }
 
-li{
+li {
   display: inline-block;
   width: 22%;
   height: 100%;
-  background: rgba(228, 218, 218, 0.4); /* перевести HEX в RGB */ 
+  background: rgba(228, 218, 218, 0.4); /* перевести HEX в RGB */
   margin: 0%;
   padding: 10px;
-  text-align: center;  
+  text-align: center;
   vertical-align: middle;
 }
 
-li:hover{
+li:hover {
   text-decoration: none;
-  color: #FFE5E5;
+  color: #ffe5e5;
   background-color: #26b4b7;
 }
 
-i{
+i {
   padding: 40%;
   font-size: 50px;
 }
