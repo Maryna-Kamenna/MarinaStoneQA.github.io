@@ -1,0 +1,124 @@
+body{
+    font-size: 13px;
+}
+.main{
+    background-image: url(/Lesson10/lessonpractice/images/back.jpg);
+    max-width: 876px;
+    margin: 0 auto;
+}
+
+.conteiner {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.384em;
+}
+.nav {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+.nav__item .link {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    margin: 0 25px;
+}
+.nav__item .link:hover {
+    text-decoration: underline;
+}
+.nav__item:first-child .link: {
+    margin-left: 0;
+}
+
+.nav__item:last-child .link: {
+margin-right: 0;
+}
+
+.products {
+    padding: 60px;
+    height: 400px;
+    position: relative;
+}
+
+.products:hover .product2 {
+    opacity:0.7 ;
+    width: 100%;
+}
+
+.products:hover .product1 {
+    opacity:1 ;
+    width: 97%;
+    z-index: 1;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 64px;
+}
+
+.product {
+    position: absolute;
+    display: flex;
+    background: white;
+    transition-duration: 2s;
+}
+
+.product1 {
+    opacity: 0.7;
+}
+.product2 {
+    width: 97%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background-color: rgb(247, 15, 15);
+    top: 64px;
+}
+
+.product__images {
+    flex: 2;
+    background-color: #edeaec;
+}
+
+.main-image {
+    position: relative;
+}
+
+.main-image__sneakers {
+    max-width: 100%;
+
+}
+.main-image__plus {
+    position: absolute;
+    right: 25px;
+    bottom: 0;
+}
+
+.mins {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 ;
+}
+
+.mins__item {
+    height: 42px;
+    border: 3px solid #ffff
+    margin: 0 10px; 
+}
+
+.main-image__plus:before {
+    content: '\00b2';
+    font-size: 40px;
+}
+
+.product__details {
+    flex: 1;
+}

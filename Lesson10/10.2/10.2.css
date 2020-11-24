@@ -44,43 +44,43 @@ li${
 }
 
 a.rollover{    
-    background: url(lisa.png); /* Путь к файлу с исходным рисунком  */
+    background: url(/Lesson10/10.2/images/lisa.png); /* Путь к файлу с исходным рисунком  */
     display: block; /*  Рисунок как блочный элемент */
     width: 269px; /* Ширина рисунка */
     height: 268px; /*  Высота рисунка */
    }
    a.rollover:hover {
-    background: url(lisahover.png); /* Путь к файлу с заменяемым рисунком  */
+    background: url(/Lesson10/10.2/images/lisahover.png); /* Путь к файлу с заменяемым рисунком  */
    }
 
    a.rollover1{
-    background: url(alex.png); /* Путь к файлу с исходным рисунком  */
+    background: url(/Lesson10/10.2/images/alex.png); /* Путь к файлу с исходным рисунком  */
     display: block; /*  Рисунок как блочный элемент */
     width: 269px; /* Ширина рисунка */
     height: 268px; /*  Высота рисунка */
    }
    a.rollover1:hover {
-    background: url(lisahover.png); /* Путь к файлу с заменяемым рисунком  */
+    background: url(/Lesson10/10.2/images/lisahover.png); /* Путь к файлу с заменяемым рисунком  */
    }
 
    a.rollover2{
-    background: url(elena.png); /* Путь к файлу с исходным рисунком  */
+    background: url(/Lesson10/10.2/images/elena.png); /* Путь к файлу с исходным рисунком  */
     display: block; /*  Рисунок как блочный элемент */
     width: 269px; /* Ширина рисунка */
     height: 268px; /*  Высота рисунка */
    }
    a.rollover2:hover {
-    background: url(lisahover.png); /* Путь к файлу с заменяемым рисунком  */
+    background: url(/Lesson10/10.2/images/lisahover.png); /* Путь к файлу с заменяемым рисунком  */
    }
 
    a.rollover3{
-    background: url(lily.png); /* Путь к файлу с исходным рисунком  */
+    background: url(/Lesson10/10.2/images/lily.png); /* Путь к файлу с исходным рисунком  */
     display: block; /*  Рисунок как блочный элемент */
     width: 269px; /* Ширина рисунка */
     height: 268px; /*  Высота рисунка */
    }
    a.rollover3:hover {
-    background: url(lisahover.png); /* Путь к файлу с заменяемым рисунком  */
+    background: url(/Lesson10/10.2/images/lisahover.png); /* Путь к файлу с заменяемым рисунком  */
    }
 
 .social a {
@@ -113,5 +113,5 @@ a.rollover{
   display: flex;
   width: 269px;
   height: 269px;
-  background: url("hover.png");
+  background: url("/Lesson10/10.2/images/hover.png");
 }  

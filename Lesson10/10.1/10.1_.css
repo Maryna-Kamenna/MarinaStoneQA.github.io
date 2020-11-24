@@ -1,0 +1,49 @@
+*{ box-sizing: border-box; }
+
+.container {
+    width: 1500px;
+    height: 860px;
+    background-color: #b07cf7 ;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+justify-content: space-around;
+}
+
+h1{
+
+}
+
+.blog1{
+    background-image: url(/Lesson10/10.1/images/img1.png);
+    width: 370px;
+    height: 151px;
+
+}
+
+.blog2{   
+     background-image: url(/Lesson10/10.1/images/img2.png);
+     width: 370px;
+     height: 151px;
+    
+}
+
+.blog3{    
+    background-image: url(/Lesson10/10.1/images/img3.png);
+    width: 370px;
+    height: 151px;
+    
+}
+
+span{ 
+    width: 200px;
+    padding: 13px 25px;
+    font-size: 20px;
+    border: none;
+    background: 0 0;
+    background-color: #f72b3b;
+    align-items: center
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+}
