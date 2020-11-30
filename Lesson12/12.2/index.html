@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign in Form</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="modal">
+        <div class="modal__panel">
+            <div class="tabs modal__tabs">
+                <ul class="tabs__nav">
+                    <li class="tabs__item">
+                        <a href="#sign" class="tabs__link">Sign in</a>
+                    </li>
+                    <li class="tabs__item">
+                        <a href="#join" class="tabs__link tabs__link--active">Join us</a>
+                    </li>
+                    <li class="tabs__devider"></li>
+                </ul>
+                <div class="tabs__body">
+                    <div class="tabs__content" id="sign">
+                        <form action="#" method="get">
+                            <div class="form">
+                                <div class="form__controls">
+                                    <label class="form__label" for="Username">Username</label>
+                                    <input class="form__input" minlength="3" type="text" name="Username" id="Username">
+                                    <div class="form__error">error</div>
+                                </div>
+                                <div class="form__controls">
+                                    <label class="form__label" for="Password">Password</label>
+                                    <input class="form__input" required type="password" name="Password" id="Password">
+                                    <div class="form__error">error</div>
+                                </div>
+                                <div class="form__controls form__controls--checkbox">
+                                    <input checked type="checkbox" name="keep" id="keep">
+                                    <label class="form__label form__label--checkbox" for="keep">
+                                        <span class="form__checkbox">&#10004;</span>
+                                        Keep me signed in
+                                    </label>
+                                </div>
+                                <div class="form__controls form__controls--submit">
+                                    <button type="submit" class="btn btn--primary">Sign in</button>
+                                </div>
+                                <div class="form__advanced d-flex justify-content-between">
+                                    <a href="javascript:void(0)" class="form__link">Forgot password</a>
+                                    <a href="#join" class="form__link">Create an account</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tabs__content" id="join">
+                        <form action="#" method="get">
+                            <div class="form">
+                                <div class="form__controls">
+                                    <label class="form__label" for="Username">Username</label>
+                                    <input class="form__input" minlength="3" type="text" name="Username" id="Username">
+                                    <div class="form__error">error</div>
+                                </div>
+                                <div class="form__controls">
+                                    <label class="form__label" for="Password">Password</label>
+                                    <input class="form__input" required type="password" name="Password" id="Password">
+                                    <div class="form__error">error</div>
+                                </div>
+                                <div class="form__controls">
+                                    <label class="form__label" for="repeat_password">Repeat password</label>
+                                    <input class="form__input" required type="repeat_password" name="repeat_password"
+                                        id="repeat_password">
+                                    <div class="form__error">error</div>
+                                </div>
+                                <div class="form__controls form__controls--submit">
+                                    <button type="submit" class="btn btn--primary">Join in</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>

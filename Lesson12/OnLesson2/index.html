@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Payment on lesson</title>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="plagins/jquery.mask.min.js"></script>
+    <script src="src/jquery.mask.js"></script>
+    
+    <script>$('.phone_with_ddd').mask('(00) 0000-0000') 
+    </script> 
+
+
+    <main class="wrapper">
+    <header>
+        <h1>Harold Finch </h1>
+        <h2> Your Total </h2>
+       <div>$88 </div>
+    </header>
+        <foarm action="form">
+            <input type="text" name="number" id="number" class="form_input" data-mask="0000 0000 0000 0000"
+                autocomplete="off" maxlength="19">
+        </foarm>
+
+
+        <label for="standart-select">Standard Select </label>
+        <div class="select">
+            <select id="standart-select">
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+            </select>
+        </div>
+
+
+
+
+    </main>
+</body>
+
+</html>

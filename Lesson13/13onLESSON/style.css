@@ -1,0 +1,61 @@
+*{box-sizing: border-box;}
+body{
+    
+    max-width: 367px;
+    height: 777px;
+    background-image: url(/Lesson13/13onLESSON/images/IPhone.svg.png);
+    background-repeat: no-repeat;
+
+}
+
+.conteiner{
+    display: flex;
+    flex: wrap;
+    width: 315px;
+    height: 460px;
+    padding: 5px 100px 5px 210px;
+}
+
+.icon${
+
+}
+
+.icon-apple {
+        display: flex;
+        flex: w;
+        width: 60px;
+        height: 60px;
+        padding: 43px 135px 264px 582px;
+        stroke-width: 0;
+        color: black;
+}
+
+.icon-googlechrome{
+    display: flex;
+    flex-direction: row;
+    width: 60px;
+    height: 60px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: black;
+  }
+
+  .icon-facebook {
+    display: flex;
+    flex-direction: row;
+    width: 60px;
+    height: 60px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+
+  .icon-playstation{
+    display: flex;
+    flex-direction: row;
+    width: 60px;
+    height: 60px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }

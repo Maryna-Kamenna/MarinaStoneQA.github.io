@@ -1,0 +1,55 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+</style>
+body{
+    margin: 0 auto;
+    padding: 0 ;
+   max-width: 2850px;
+    height: 1410px;
+    background-color:#BAC5DB;
+}
+.img{
+    margin: -40px;
+    padding: 20px;
+}
+.fon{
+    text-align: center;
+    background-color: #353a45;
+    border-radius: 10px;
+    width: 666px;
+    height: 389px;
+}
+h1 {
+    padding: 20px;
+    color: #538fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+h2 {
+    padding: 10px;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+.text{
+    border-radius: 8px;
+    width: 371px;
+    height: 52px;
+}
+.Subscribe{
+
+    color: rgb(255, 255, 255);
+    background-color: blue;
+    border-radius: 8%;
+    width: 161px;
+    height: 52px;
+}
+footer{
+    padding: 20px ;
+    color: #787d87;
+    font-family: Lato Italic;
+    font-size: 300;
+}
+checkbox{
+
+}

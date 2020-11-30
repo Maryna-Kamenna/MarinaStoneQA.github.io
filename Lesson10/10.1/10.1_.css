@@ -1,49 +1,105 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
+</style>
+
 *{ box-sizing: border-box; }
 
+body{
+    min-width: 1500px;
+    background-color: #b07cf7;
+}
+
 .container {
-    width: 1500px;
-    height: 860px;
-    background-color: #b07cf7 ;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;;
+    font-family: 'Raleway', sans-serif; 
+}  
+
+.container__h1{
+    text-align: center;
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.container__p{
+     text-align: center;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
 }
 
 .box{
     display: flex;
     flex-direction: row;
-justify-content: space-around;
+    justify-content: space-around;
+    margin-top: 100px;
+    position: relative;
 }
 
-h1{
-
-}
-
-.blog1{
+.box__blog1{
     background-image: url(/Lesson10/10.1/images/img1.png);
+    background-size: 370px 310px;
+    margin-right: 25px;
     width: 370px;
-    height: 151px;
-
+    height: 310px;
 }
 
-.blog2{   
-     background-image: url(/Lesson10/10.1/images/img2.png);
-     width: 370px;
-     height: 151px;
-    
+.box__blog2{   
+    background-image: url(/Lesson10/10.1/images/img2.png);
+    background-size: 370px 310px;
+    margin-right: 25px;
+    width: 370px;
+    height: 310px;
 }
 
-.blog3{    
+.box__blog3{    
     background-image: url(/Lesson10/10.1/images/img3.png);
+    background-size: 370px 310px;
     width: 370px;
-    height: 151px;
-    
+    height: 310px;   
 }
 
-span{ 
-    width: 200px;
-    padding: 13px 25px;
+img{
+    text-align: left;
+}
+
+.blog{
+    color: white;
+    vertical-align: bottom;
+    margin-left: 20px;
+    position: absolute;
+    top: 198px;
+    width: 307px;
+    height: 78px;
+}
+
+.description1{
+    font-family: 'Raleway', sans-serif; 
     font-size: 20px;
-    border: none;
-    background: 0 0;
+    font-weight: 700;
+}
+
+.description2{
+    font-family: 'Raleway', sans-serif; 
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.footer_button{ 
+    display: flex;
+    justify-content: center; 
+    margin: 0 auto;
+    margin-top:70px ;
+    color: white;
+    font-family: 'Raleway', sans-serif; 
+    font-size: 20px;
     background-color: #f72b3b;
-    align-items: center
+    align-items: center;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+    width: 200px;
+    height: 55px;
+}
+.footer_button:hover{
+    transform: translate(110% 0);
 }

@@ -1,0 +1,105 @@
+
+
+*{box-sizing: border-box; }
+
+.main{
+    width: 1200px;
+    background-color: #464f54;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 1060px;
+    background-color: white;
+    border: 2px solid #e8eced;
+
+}
+.vl{
+    border-left: 2px solid #e8eced; /* Параметры линии */ 
+    margin-left: 20px; /* Отступ слева */
+    padding: 30px; /* Расстояние от линии до текста */
+}
+.black{
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    width: 876px;
+    height: 187px;
+    background-color: black;
+    position: absolute;
+    top: 47px;
+    right: 0;
+    box-sizing: border-box;
+    padding-left: 64px;
+
+}
+.inblack{
+    border-bottom: 2px solid #8f8f8f;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.orange {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 812px;
+    height: 76px;
+    background-color: #f6bc2c;
+    margin:0px 0 0 64px; 
+    padding: 0;
+    padding:22px 40px;
+    font-size: 28px;
+}
+img{
+    margin-left:35px;
+}
+
+
+.tit {
+    font-family: Proxima Nova Regular, sans-serif;
+    color: #8f8f8f;
+    text-align: left;
+}
+
+h3 {
+color: #b4b4b4;
+font-family: "Proxima Nova";
+font-size: 20px;
+font-weight: 400;
+text-align: left;
+}
+
+h1 {
+    font-size: 78px;
+    font-weight: 700;
+    color: #2a2a2a;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+
+}
+
+p {
+    text-align: center;
+    color: #000000;
+    font-family: Georgia;
+    font-size: 27px;
+    font-weight: 400;
+}
+
+span {
+    font-size: 27px;
+    font-weight: 400;
+    font-family: "Georgia - Italic";
+    font-style: italic;
+
+}

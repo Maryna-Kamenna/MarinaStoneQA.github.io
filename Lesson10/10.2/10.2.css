@@ -1,7 +1,9 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
+* {transition: all 0.4s else-out ;
 
+}
 .wrapper{
     width: 1170px;
     height: 736px;

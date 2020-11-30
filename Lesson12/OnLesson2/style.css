@@ -1,0 +1,62 @@
+body { box-sizing: border-box;
+width: 800px;
+background-color: #4c5153;
+}
+.wrapper{
+    background-image: url(/Lesson12/OnLesson2/image/fon2.png);
+    width: 600px;
+}
+.form{
+  
+}
+
+select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+  }
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+select::-ms-expand {
+    display: none;
+  }
+select {
+    // ...existing styles
+    outline: none;
+}
+
+h1 {
+  font-size: 14px;
+  font-family: "Times New Roman";
+  color: rgb(110, 127, 123);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 255px;
+  top: 57.6px;
+  z-index: 7;
+}
+
+
+h2 {
+  font-size: 10px;
+  font-family: "Montserrat";
+  color: rgb(166, 162, 141);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 254.891px;
+  top: 74px;
+  z-index: 8;
+}

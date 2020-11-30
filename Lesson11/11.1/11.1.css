@@ -5,12 +5,13 @@
 { box-sizing: border-box; }
 
 .fon {
-    background-image: url(img123.jpg);
-    height: 66.66% ;
+    background-image: url(/Lesson11/11.1/images/img123.jpg);
+    height: 66% ;
     margin: 0;
 }
 
 .mainer { 
+    height: 100%;
     display: flex;
     flex-direction: column;
     max-width: 1500px;
@@ -23,36 +24,48 @@
 
 .logo__nav {
     display: flex;
-    flex-direction: row;
     list-style-type: none;
     text-decoration: none;
+    flex-direction: row;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 16px;
-    color:#262626;
-    padding: 40px;
-    margin: 60px;
+    color:#020202;
+    padding: 60px;
+    margin: 40px 20px 20px 20px;
 }
 
-.logo__nav > li+ li {
+.logo__nav > li + li {
     margin-left: 60px;
 }
 
-.nav__itema {
-    margin-right: auto;
-    font-family: 'Pacifico', cursive; 
+.nav__item__logo {
+    padding-right: 350px;
+    font-family: 'Pacifico', cursive;
     font-size: 50px;
     font-size: 400;
 }
+
 .nav__item .link:hover {
     border-top: 3px solid #ff6033;
-    padding-top: 9px;}
+    padding-top: 9px;
+}
+
+.nav__item,.link{
+    text-decoration: none;
+    color: #262626;}
 
 .about {
  padding: 215px 0px 70px ;
 }
 
-h1 {
+.about__fresh {
+  padding: 80px;
+  padding-left: 94px ;
+
+}
+
+.h1 {
     color: #262626;
     font-family: 'Raleway', sans-serif;
     font-size: 60px;
@@ -60,55 +73,112 @@ h1 {
     font-style: normal;
     letter-spacing: normal;
     line-height: 25px;
-    text-align: left;
+    padding-bottom: 30px;
 }
-.pe-1 {
+.fresh__pe {
     color: #262626;
     font-family: 'Raleway', sans-serif;
     font-size: 17px;
-    font-weight: 300;
     line-height: 27px;
-    text-align: left;
+    padding-bottom: 30px;
 }
-.get{
+
+.fresh__button{
+
+    width: 200px;
+    height: 55px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     background-color: #ff6033;
-    color:#ffffff; 
-    padding: 20px 26px; 
+    color: white;
+
 }
+
 footer{
     text-align: center;
 }
 
 .about2 {
+    width: 1500px;
+    height: 34%;
     background-color: #00BFBF;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-h2 {
+
+.h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 50px;
     font-weight: 700;
     color: white;
 }
 
-.pe-2{
+.text__pe2{
     color: #fff;
     font-family: 'Raleway', sans-serif;
     font-size: 17px;
     font-weight: 300;
     line-height: 27px;
     text-align: left;
-
 }
 
-.textrigt {
-    padding: 120px;
+.about2__text {
+    padding: 281px 166px 231px 94px;
 }
 
 .size {
-    text-align: right;
     width: 556px;
-    height: 44,33%;
-    padding: 80px;
+    height: 559px;
+    padding: 175px 70px 94px 70px;
+}
+
+/* второй блок с svg */
+
+.mainer2{
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    height: 790px;
+    background-color: #70bfff;
+    margin: 0 auto;
+}
+.mainer2__nav{
+   display: inline; 
+   list-style-type: none;
+   
+}
+.icon-cart1{
+    display: inline-block;
+    width: 44px;
+    height: 47px;
+    color: black;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+
+  .icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    color: black;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+
+  
+
+.service{
+color: #ffffff;
+font-family: Raleway,sans-serif;
+font-size: 90px;
+font-weight: 700;
+line-height: 27px;
+text-align: right;
+}
+.tomato{
+    width: 425px;
+    height: 527px;
+    text-align: center;
 }
