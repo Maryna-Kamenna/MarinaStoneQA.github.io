@@ -2,10 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;700&display=swap');
 </style>
 *
-{ box-sizing: border-box; }
+{ box-sizing: border-box; 
+}
+
+body{
+    max-width: 1500px;
+    margin: 0 auto;
+}
 
 .fon {
-    background-image: url(/Lesson11/11.1/images/img123.jpg);
+    background-image: url(./images/img123.jpg);
     height: 66% ;
     margin: 0;
 }
@@ -62,7 +68,6 @@
 .about__fresh {
   padding: 80px;
   padding-left: 94px ;
-
 }
 
 .h1 {
@@ -75,6 +80,7 @@
     line-height: 25px;
     padding-bottom: 30px;
 }
+
 .fresh__pe {
     color: #262626;
     font-family: 'Raleway', sans-serif;
@@ -83,14 +89,12 @@
     padding-bottom: 30px;
 }
 
-.fresh__button{
-
+.fresh__button {
     width: 200px;
     height: 55px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     background-color: #ff6033;
     color: white;
-
 }
 
 footer{
@@ -132,53 +136,74 @@ footer{
     padding: 175px 70px 94px 70px;
 }
 
+
+
+
+
+
+
 /* второй блок с svg */
 
-.mainer2{
+.mainer2 {
     display: flex;
-    flex-direction: column;
-    max-width: 1500px;
-    height: 790px;
+    justify-content: center;   
+    min-height: 790px;
     background-color: #70bfff;
-    margin: 0 auto;
 }
-.mainer2__nav{
-   display: inline; 
-   list-style-type: none;
+
+.mainer2__nav {
+  width: 50%;
+  margin: 0 auto;
+  min-height: 790px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.list__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.item__button {
+    width: 400px;
+    height: 100px;
+    color: #262626;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: center;
+}
+
+.icon {
+    width: 100px;
+    height: 50px;
+}
+.lane{
+    border-left: 2px solid #9d9d9d;
+
+}
+
+.h2-blok3 {
+    color: #fff;
+    font-family: 'Raleway-Bold', sans-serif;
+    font-size: 90px;
    
 }
-.icon-cart1{
-    display: inline-block;
-    width: 44px;
-    height: 47px;
-    color: black;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-  }
 
-  .icon {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    color: black;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-  }
-
-  
-
-.service{
-color: #ffffff;
-font-family: Raleway,sans-serif;
-font-size: 90px;
-font-weight: 700;
-line-height: 27px;
-text-align: right;
-}
-.tomato{
-    width: 425px;
-    height: 527px;
-    text-align: center;
+.service { 
+    width:50%;
+    background-image: url(./images/tomato.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    min-height: 790px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,9 +1,7 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
-* {transition: all 0.4s else-out ;
-
-}
+* {transition: all 0.4s else-out ;}
 .wrapper{
     width: 1170px;
     height: 736px;
@@ -15,7 +13,7 @@
 
 h1{
     text-align: center;
-    font-family: font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size:34px;
     font:700
 }
@@ -28,13 +26,13 @@ h2{
     padding-bottom: 30px;
     text-align: center;
     font-size: 16px;
-    font-family: font-family: 'Lato', sans-serif;
+    font-family:'Lato', sans-serif;
 }
 
 p{
     font-size: 18px;
     font: 700;
-    font-family: font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 ul{
@@ -46,43 +44,43 @@ li${
 }
 
 a.rollover{    
-    background: url(/Lesson10/10.2/images/lisa.png); /* Путь к файлу с исходным рисунком  */
+    background: url(./images/lisa.png); /* Путь к файлу с исходным рисунком  */
     display: block; /*  Рисунок как блочный элемент */
     width: 269px; /* Ширина рисунка */
     height: 268px; /*  Высота рисунка */
    }
    a.rollover:hover {
-    background: url(/Lesson10/10.2/images/lisahover.png); /* Путь к файлу с заменяемым рисунком  */
+    background: url(./images/lisahover.png); /* Путь к файлу с заменяемым рисунком  */
    }
 
    a.rollover1{
-    background: url(/Lesson10/10.2/images/alex.png); /* Путь к файлу с исходным рисунком  */
+    background: url(./images/alex.png); /* Путь к файлу с исходным рисунком  */
     display: block; /*  Рисунок как блочный элемент */
     width: 269px; /* Ширина рисунка */
     height: 268px; /*  Высота рисунка */
    }
    a.rollover1:hover {
-    background: url(/Lesson10/10.2/images/lisahover.png); /* Путь к файлу с заменяемым рисунком  */
+    background: url(.images/lisahover.png); /* Путь к файлу с заменяемым рисунком  */
    }
 
    a.rollover2{
-    background: url(/Lesson10/10.2/images/elena.png); /* Путь к файлу с исходным рисунком  */
+    background: url(/./images/elena.png); /* Путь к файлу с исходным рисунком  */
     display: block; /*  Рисунок как блочный элемент */
     width: 269px; /* Ширина рисунка */
     height: 268px; /*  Высота рисунка */
    }
    a.rollover2:hover {
-    background: url(/Lesson10/10.2/images/lisahover.png); /* Путь к файлу с заменяемым рисунком  */
+    background: url(./images/lisahover.png); /* Путь к файлу с заменяемым рисунком  */
    }
 
    a.rollover3{
-    background: url(/Lesson10/10.2/images/lily.png); /* Путь к файлу с исходным рисунком  */
+    background: url(./images/lily.png); /* Путь к файлу с исходным рисунком  */
     display: block; /*  Рисунок как блочный элемент */
     width: 269px; /* Ширина рисунка */
     height: 268px; /*  Высота рисунка */
    }
    a.rollover3:hover {
-    background: url(/Lesson10/10.2/images/lisahover.png); /* Путь к файлу с заменяемым рисунком  */
+    background: url(.images/lisahover.png); /* Путь к файлу с заменяемым рисунком  */
    }
 
 .social a {
@@ -115,5 +113,5 @@ a.rollover{
   display: flex;
   width: 269px;
   height: 269px;
-  background: url("/Lesson10/10.2/images/hover.png");
+  background: url(.images/hover.png);
 }  

@@ -12,7 +12,7 @@ body {
 }
 
 .fon {
-    background-image: url(/12.1/images/fon.jpg);
+    background-image: url(./images/fon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
@@ -119,7 +119,7 @@ option {
   select::-ms-expand {
     display: none; /* Remove default arrow in Internet Explorer 10 and 11 */
 }
-button{
+button {
     margin: 20px;
     width: 200px;
     padding: 5px 25px 5px 5px;
