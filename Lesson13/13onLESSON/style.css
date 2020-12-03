@@ -10,7 +10,7 @@ body{
 
 .conteiner{
     display: flex;
-    flex: wrap;
+    flex-direction: wrap;
     width: 315px;
     height: 460px;
     padding: 5px 100px 5px 210px;
@@ -22,7 +22,7 @@ body{
 
 .icon-apple {
         display: flex;
-        flex: w;
+        flex-direction: row;
         width: 60px;
         height: 60px;
         padding: 43px 135px 264px 582px;
