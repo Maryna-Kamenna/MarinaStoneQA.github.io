@@ -17,11 +17,13 @@ h1{
     font-size:34px;
     font:700
 }
+
 hr{
     width: 45px;
     height: 4px;
     color: #dddbdb;
 }
+
 h2{
     padding-bottom: 30px;
     text-align: center;

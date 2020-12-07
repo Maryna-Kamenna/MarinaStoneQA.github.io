@@ -1,7 +1,7 @@
-body{
+body {
     font-size: 13px;
 }
-.main{
+.main {
     background-image: url(/Lesson10/lessonpractice/images/back.jpg);
     max-width: 876px;
     margin: 0 auto;
@@ -18,12 +18,14 @@ body{
     align-items: center;
     padding-top: 2.384em;
 }
+
 .nav {
     display: flex;
     padding-left: 0;
     list-style: none;
     margin: 0;
 }
+
 .nav__item .link {
     font-family: Arial, sans-serif;
     font-size: 1em;
@@ -32,9 +34,11 @@ body{
     text-decoration: none;
     margin: 0 25px;
 }
+
 .nav__item .link:hover {
     text-decoration: underline;
 }
+
 .nav__item:first-child .link: {
     margin-left: 0;
 }
@@ -74,6 +78,7 @@ margin-right: 0;
 .product1 {
     opacity: 0.7;
 }
+
 .product2 {
     width: 97%;
     margin: 0 auto;

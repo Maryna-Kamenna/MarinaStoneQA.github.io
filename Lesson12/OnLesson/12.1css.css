@@ -1,6 +1,8 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 </style>
+
+
 body{
     margin: 0 auto;
     padding: 0 ;
@@ -47,7 +49,7 @@ h2 {
 footer{
     padding: 20px ;
     color: #787d87;
-    font-family: Lato Italic;
+    font-family: 'Lato' Italic;
     font-size: 300;
 }
 checkbox{

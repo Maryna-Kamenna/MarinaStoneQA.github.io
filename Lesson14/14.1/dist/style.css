@@ -1,9 +1,10 @@
-.separator:before, header__subtitle__separator:before {
+.separator:before, .details__separator--lower:before, .details__separator:before, .header__title__separator:before, .separator:after, .details__separator--lower:after, .details__separator:after, .header__title__separator:after {
   content: "";
-  display: block;
+  display: inline-block;
   width: 100px;
   height: 1px;
   border-top: 1px solid #ffcc00;
+  margin: 0 auto;
 }
 
 body {
@@ -14,24 +15,97 @@ body {
 .container {
   max-width: 1110px;
   margin: 0 auto;
-  margin-top: 115px;
+  height: 100px;
 }
 
-header__title {
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.header__title {
+  font-size: 18px;
   color: #666666;
   text-align: center;
   line-height: 24px;
+  font-family: "Relawey-Medium", sans-serif;
 }
-header__subtitle {
-  font-size: 60px;
+.header__title__subtitle {
+  font-size: 16px;
+  font-family: "roboto-black", sans-serif;
   text-align: center;
   margin-bottom: 55px;
+  color: #ffcc00;
 }
-header__subtitle img-conteiner {
-  background: linear-gradient(to right, #ffcc00 5px, transparent 5px) 0 0, linear-gradient(to right, #ffcc00 5px, transparent 5px) 0 100%, linear-gradient(to left, #ffcc00 5px, transparent 5px) 100% 0, linear-gradient(to left, #ffcc00 5px, transparent 5px) 100% 100%, linear-gradient(to bottom, #ffcc00 5px, transparent 5px) 0 0, linear-gradient(to bottom, #ffcc00 5px, transparent 5px) 100% 0, linear-gradient(to top, #ffcc00 5px, transparent 5px) 0 100%, linear-gradient(to top, #ffcc00 5px, transparent 5px) 100% 100%;
-  border-radius: 0px;
-}
-header__subtitle__separator:before {
+.header__title__separator:before {
   width: 450px;
 }
-/*# sourceMappingURL=style.css.map */
+.header .fab {
+  width: 16px;
+  height: 19px;
+  color: orange;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 100px;
+}
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+}
+.main__foto {
+  width: 49%;
+  background-image: url(/dist/img/back.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+}
+@media screen and (max-width: 375px) {
+  .main__foto {
+    width: inherit;
+    height: inherit;
+  }
+}
+.main__img {
+  margin-top: 15px;
+  border: 1px solid orange;
+}
+.main__next, .main__rev {
+  color: orange;
+  font-size: 40px;
+  cursor: pointer;
+  font-weight: 400;
+  position: absolute;
+}
+.main__next {
+  top: 50.6306306306%;
+  right: -100%;
+}
+.main__prev {
+  top: 50.6306306306%;
+  right: -47%;
+}
+.main__imfo {
+  width: 51%;
+  text-align: center;
+  border-left: 2px solid orange;
+  padding-top: 90px;
+}
+
+.details__separator:before {
+  display: none;
+}
+.details__separator:after {
+  width: 100px;
+}
+.details__separator--lower:before {
+  display: none;
+}
+.details__separator--lower:after {
+  width: 100px/2;
+  border-top: 4px dashed orange;
+}

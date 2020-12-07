@@ -1,3 +1,5 @@
+@import 'var';
+
 body{
     font-family:$font;
     font-size: $baseFontSize;
@@ -6,30 +8,115 @@ body{
 .container {
     max-width: 1110px;
     margin: 0 auto;
-    margin-top: 115px;
+    height: 100px;
 }
 
-  header {
-    &__title {
-    color: $titleColor;
-    text-align: center;
-    line-height: $LineHeight;
-    }
-
-    &__subtitle {
-    font-size: $baseFontSize + 44px;
-    text-align: center;
-    margin-bottom: 55px;
-
-    img-conteiner{
-        @include lgradient($secondColor,5px,0px);
+  .header {
+      text-align: center;
+      margin-bottom: 40px;
+        &__title {
+        font-size: 18px;
+        color: $titleColor;
+        text-align: center;
+        line-height: $LineHeight;
+        font-family: 'Relawey-Medium', sans-serif;
+        
+        &__subtitle {
+        font-size: 16px;
+        font-family: 'roboto-black',sans-serif;
+        text-align: center;
+        margin-bottom: 55px;
+        color: $secondColor;
         }
-    
-    &__separator{
-    @extend .separator;
-    &:before{
-    width: 450px;
+        &__separator{
+        @extend .separator;
+        &:before{
+        width: 450px;
         }   
       }
    }
+   .fab{
+       width:16px ;
+       height:19px ;
+       color: orange;
+
+   }
+
 }
+
+.main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 100px ;
+
+    @include _768{
+        flex-direction: column;
+
+    }
+    &__foto{
+        width: 49%;
+        background-image: url(/dist/img/back.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: center;
+        position: relative;
+        @include _375{
+            width: inherit;
+            height: inherit;
+        }
+    }
+    &__img{
+        margin-top: 15px;
+       border: 1px solid orange;
+    }
+
+    &__next, &__rev{
+        color: orange;
+        font-size: 40px;
+        cursor: pointer;
+        font-weight: 400;
+        position: absolute;
+    }
+
+    &__next{
+        top:562/1110*100%;
+        right: -100%;
+
+    }
+    &__prev{
+        top:562/1110*100%;
+        right:-47%;
+    }
+    &__imfo{
+        width: 51%;
+        text-align: center;
+        border-left: 2px solid orange;
+        padding-top: 90px;
+
+    }
+}
+.details{
+
+    &__separator{
+
+        @extend .separator;
+        &:before{
+            display: none;
+        }
+        &:after{
+            width:100px ;     
+        }
+                }
+    &__separator--lower{
+        @extend .separator;
+        &:before{
+            display: none;
+        }
+        &:after{
+            width:100px / 2; 
+            border-top: 4px dashed orange;
+    }
+  }
+}
+

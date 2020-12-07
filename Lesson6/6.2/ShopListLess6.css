@@ -32,25 +32,25 @@ input{
   color: blue;
 
 }
-ul{
+ul {
   list-style-type: none;
   background-color: #88839E;
   padding: 0px;
 }
-li{
+li {
   color:#ffffff;
   font-family:Arial;
   display:block;
 }
-li:nth-child(even){
+li:nth-child(even) {
     background-color: #7A7593;
 }
-li:hover{
+li:hover {
     background-color: #625E77;
     border-bottom: 3px solid #ffffff;
     border-top: 3px solid #ffffff;
 }
-li:active{
+li:active {
     background-color:#766774;
 }
 
@@ -82,7 +82,7 @@ span:before:before {
 }
 
 input[type=checkbox]:checked+label,
-input[type=chekbox]:checked +label + span{
+input[type=chekbox]:checked +label + span {
   text-decoration-line: line-through;
   color: #A19FB5;
 }
