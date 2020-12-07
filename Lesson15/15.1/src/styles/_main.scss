@@ -82,7 +82,7 @@
 
     &__h1 {
     color: #262626;
-    font-family: 'Raleway', sans-serif;
+    font-family: $font;
     font-size: 60px;
     font-weight: 800;
     font-style: normal;
@@ -93,7 +93,7 @@
 
     &__pe {
     color: #262626;
-    font-family: 'Raleway', sans-serif;
+    font-family: $font;
     font-size: 17px;
     line-height: 27px;
     padding-bottom: 30px;
@@ -133,7 +133,7 @@
     }
 
     &__h2 {
-    font-family: 'Raleway', sans-serif;
+    font-family: $font;
     font-size: 50px;
     font-weight: 700;
     color: white;
@@ -427,9 +427,8 @@
     justify-content: center; 
     margin: 0 auto;
     margin-top:70px;
-    margin: ;
     color: white;
-    font-family: 'Raleway', sans-serif; 
+    font-family: $font; 
     font-size: 20px;
     background-color: #f72b3b;
     align-items: center;
@@ -458,7 +457,7 @@
     margin: 0;
     text-align: center;
     color: #262626;
-    font-family: 'Raleway', sans-serif;
+    font-family: $font;
     font-size: 90px;
     font-weight: 700;
     line-height: 25px;
@@ -467,7 +466,7 @@
     &__h2 {    
     padding:0px 80px 50px 80px;
     color: #262626;
-    font-family: 'Raleway', sans-serif;
+    font-family:$font;
     font-size: 17px;
     font-weight: 300;
     font-style: normal;
@@ -594,7 +593,7 @@
     }
 
     &__fot {
-    font-family: 'Raleway',sans-serif;
+    font-family: $font;
     font-size: 16px;
     font-weight: 300;
     }
@@ -607,7 +606,7 @@
     }
 
     &__fot2 {
-    font-family: 'Raleway',sans-serif;
+    font-family: $font;
     font-size: 15px;
     font-weight: 300;
     line-height: 25px;

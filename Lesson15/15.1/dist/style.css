@@ -72,7 +72,7 @@ body {
 }
 .about__h1 {
   color: #262626;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 60px;
   font-weight: 800;
   font-style: normal;
@@ -82,7 +82,7 @@ body {
 }
 .about__pe {
   color: #262626;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 17px;
   line-height: 27px;
   padding-bottom: 30px;
@@ -115,7 +115,7 @@ body {
   width: 46%;
 }
 .about2__h2 {
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 50px;
   font-weight: 700;
   color: white;
@@ -332,7 +332,7 @@ body {
   position: relative;
 }
 .mainer5__blog1 {
-  background-image: url(image/apple5.png);
+  background-image: url(/dist/image/apple5.png);
   background-size: 370px 310px;
   margin-right: 25px;
   width: 370px;
@@ -361,14 +361,14 @@ body {
   font-weight: 300;
 }
 .mainer5__blog2 {
-  background-image: url(image/smuzi5.png);
+  background-image: url(/dist/image/smuzi5.png);
   background-size: 370px 310px;
   margin-right: 25px;
   width: 370px;
   height: 310px;
 }
 .mainer5__blog3 {
-  background-image: url(image/strow5.png);
+  background-image: url(/dist/image/strow5.png);
   background-size: 370px 310px;
   width: 370px;
   height: 310px;
@@ -378,9 +378,8 @@ body {
   justify-content: center;
   margin: 0 auto;
   margin-top: 70px;
-  margin-bottom: 70px;
   color: white;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 20px;
   background-color: #f72b3b;
   align-items: center;
@@ -405,7 +404,7 @@ body {
   margin: 0;
   text-align: center;
   color: #262626;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 90px;
   font-weight: 700;
   line-height: 25px;
@@ -413,7 +412,7 @@ body {
 .mainer6__h2 {
   padding: 0px 80px 50px 80px;
   color: #262626;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 17px;
   font-weight: 300;
   font-style: normal;
@@ -522,7 +521,7 @@ body {
   color: #b9b9b9;
 }
 .mainer6__fot {
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 16px;
   font-weight: 300;
 }
@@ -533,7 +532,7 @@ body {
   font-weight: 400;
 }
 .mainer6__fot2 {
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 25px;
