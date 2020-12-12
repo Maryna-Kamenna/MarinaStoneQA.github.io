@@ -9,29 +9,13 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin: 0 auto;
 
     &__fon {
-    background-image: url(image/fon.jpg);
+    background-image: url(image/img123.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: initial;
     height: 58%;
-    }
-    }
-    @media (max-width:1500px){
-    .mainer{
-    max-width: 1199px;
-    }
-    }
-    @media(max-width:1200px){
-    .mainer{
-    max-width: 959px;
-    }
-    }
-    @media(max-width:960px){
-    .mainer{
-    max-width: 719px;
     }
     }
 
@@ -44,7 +28,7 @@
     &__logo {
     padding-right: 350px;
     font-family: 'Pacifico', cursive;
-    font-size: 50px;
+    font-size: rem-calc(50px);
     font-weight: 600;
     }
 
@@ -52,7 +36,7 @@
     display: flex;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: rem-calc(16px);
     color:#020202;
     text-decoration: none;
     list-style: none;
@@ -60,13 +44,14 @@
 
     &__navitem + &__navitem {
     margin-left: 60px;
-    }
+}
+
 
     &__navitem:hover {
     border-top: 3px solid #ff6033;
     padding-top: 9px;
     }
-    }
+}
 
 .about {
     margin-left: 94px;
@@ -83,7 +68,7 @@
     &__h1 {
     color: #262626;
     font-family: $font;
-    font-size: 60px;
+    font-size: rem-calc(60px);
     font-weight: 800;
     font-style: normal;
     letter-spacing: normal;
@@ -94,7 +79,7 @@
     &__pe {
     color: #262626;
     font-family: $font;
-    font-size: 17px;
+    font-size: rem-calc(17px);
     line-height: 27px;
     padding-bottom: 30px;
     }
@@ -120,10 +105,10 @@
     width: 100%;
     height: 42%;
     background-color: #00BFBF;
-
-
+  
     &__size {
     width: 54%;
+   
     }
 
     &__text {
@@ -134,14 +119,15 @@
 
     &__h2 {
     font-family: $font;
-    font-size: 50px;
+    font-size: rem-calc(50px);
     font-weight: 700;
     color: white;
     }
 
     &__pe2 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 17px;
+    font-family: $font;
+    ;
+    font-size: rem-calc(17px);
     font-weight: 300;
     line-height: 27px;
     color: #fff;
@@ -175,8 +161,8 @@
     width: 400px;
     height: 100px;
     color: #262626;
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
+    font-family: $font;
+    font-size: rem-calc(20px);
     font-weight: 700;
     line-height: 27px;
     text-align: center;
@@ -202,7 +188,7 @@
     &__h2 {
     color: #fff;
     font-family: 'Raleway-Bold', sans-serif;
-    font-size: 90px;
+    font-size: rem-calc(90px);
     }
     }
 
@@ -216,15 +202,15 @@
     &__h2 {
     text-align: center;
     color: #262626;
-    font-family: 'Raleway',sans-serif;
-    font-size: 90px;
+    font-family: $font;
+    font-size: rem-calc(90px);
     font-weight: 700;
     line-height: 27px;
     }
     &__h3{
     color: #262626;
-    font-family: 'Raleway',sans-serif;
-    font-size: 17px;
+    font-family: $font;
+    font-size: rem-calc(17px);
     font-weight: 300;
     line-height: 27px;
     text-align: center;
@@ -243,7 +229,7 @@
     }
 
     &__peach {
-    width: 770px;
+    max-width: 770px;
     height: 550px;
     padding-right: 30px;
     }
@@ -294,14 +280,14 @@
     flex-direction: column;
     text-align: left;
     min-height: 500px;
-    background-image: url(/dist/image/bg5.png);
+    background-image: url(image/bg5.png);
     background-position: center;
     background-repeat: no-repeat;
 
     &__h2 {
     color: #262626;
-    font-family: 'Raleway',sans-serif;
-    font-size: 40px;
+    font-family: $font;
+    font-size: rem-calc(40px);
     font-weight: 700;
     line-height: 27px;
     padding: 30px;
@@ -313,8 +299,8 @@
     width: 541px;
     height: 43px;
     color: #262626;
-    font-family: 'Raleway',sans-serif;
-    font-size: 17px;
+    font-family: $font;
+    font-size: rem-calc(17px);
     font-weight: 300;
     line-height: 27px;
     text-align: left;
@@ -350,7 +336,7 @@
     display: flex;
     flex-direction: column;
     color: #ffffff;;
-    font-family: 'Raleway', sans-serif; 
+    font-family: $font; 
     }
 
     &__h1 {
@@ -361,7 +347,7 @@
 
     &__p {
     text-align: center;
-    font-size: 17px;
+    font-size: rem-calc(17px);
     font-weight: 300;
     line-height: 25px;
     }
@@ -374,7 +360,7 @@
     }
 
     &__blog1 {    
-    background-image: url(/dist/image/apple5.png);
+    background-image: url(image/apple5.png);
     background-size: 370px 310px;
     margin-right: 25px;
     width: 370px;
@@ -396,19 +382,19 @@
     }
 
     &__description1 {
-    font-family: 'Raleway', sans-serif; 
-    font-size: 20px;
+    font-family: $font; 
+    font-size: rem-calc(20px);
     font-weight: 700;
     }
 
     &__description2 {
-    font-family: 'Raleway', sans-serif; 
-    font-size: 13px;
+    font-family: $font; 
+    font-size: rem-calc(13px);
     font-weight: 300;
     }
 
     &__blog2 {    
-    background-image: url(/dist/image/smuzi5.png);
+    background-image: url(image/smuzi5.png);
     background-size: 370px 310px;
     margin-right: 25px;
     width: 370px;
@@ -416,7 +402,7 @@
     }
 
     &__blog3 {
-    background-image: url(/dist/image/strow5.png);
+    background-image: url(image/strow5.png);
     background-size: 370px 310px;
     width: 370px;
     height: 310px;  
@@ -429,7 +415,7 @@
     margin-top:70px;
     color: white;
     font-family: $font; 
-    font-size: 20px;
+    font-size: rem-calc(20px);
     background-color: #f72b3b;
     align-items: center;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
@@ -446,7 +432,7 @@
 
 
 .mainer6 {
-    background-image: url(/dist/image/6copy.jpg);
+    background-image: url(image/6copy.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
@@ -458,7 +444,7 @@
     text-align: center;
     color: #262626;
     font-family: $font;
-    font-size: 90px;
+    font-size: rem-calc(90px);
     font-weight: 700;
     line-height: 25px;
     }
@@ -467,7 +453,7 @@
     padding:0px 80px 50px 80px;
     color: #262626;
     font-family:$font;
-    font-size: 17px;
+    font-size: rem-calc(17px);
     font-weight: 300;
     font-style: normal;
     letter-spacing: normal;
@@ -496,7 +482,7 @@
 
 .input::placeholder,textarea::placeholder {
     color: white;
-    font-size: 15px;
+    font-size: rem-calc(15px);
     font-family: 'Realwey-Light', sans-serif;
     }
 
@@ -521,7 +507,7 @@
 
 .req {
     padding: 5px;
-    font-size: 20px;
+    font-size: rem-calc(20px);
     color: white;
     border: 2px solid rgb(0, 0, 0);
     height: 50px;
@@ -552,7 +538,7 @@
     margin: 20px;
     width: 200px;
     padding: 5px 25px 5px 5px;
-    font-size: 20px;
+    font-size: rem-calc(20px);
     color: white;
     border: 2px solid rgb(0, 0, 0);
     height: 34px;
@@ -578,7 +564,7 @@
 
     &__city,&__email,&__tel{
     font-family: "Raleway - Bold",sans-serif;
-    font-size: 17px;
+    font-size: rem-calc(17px);
     font-weight: 700;
     text-align: left;
     }
@@ -594,20 +580,20 @@
 
     &__fot {
     font-family: $font;
-    font-size: 16px;
+    font-size: rem-calc(16px);
     font-weight: 300;
     }
 
     &__fot1 {
     color: #b9b9b9;
     font-family: 'Pacifico',sans-serif;
-    font-size: 25px;
+    font-size: rem-calc(25px);
     font-weight: 400;
     }
 
     &__fot2 {
     font-family: $font;
-    font-size: 15px;
+    font-size: rem-calc(15px);
     font-weight: 300;
     line-height: 25px;
     }

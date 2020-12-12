@@ -7,31 +7,15 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  margin: 0 auto;
 }
 .mainer__fon {
-  background-image: url(image/fon.jpg);
+  background-image: url(image/img123.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: initial;
   height: 58%;
 }
 
-@media (max-width: 1500px) {
-  .mainer {
-    max-width: 1199px;
-  }
-}
-@media (max-width: 1200px) {
-  .mainer {
-    max-width: 959px;
-  }
-}
-@media (max-width: 960px) {
-  .mainer {
-    max-width: 719px;
-  }
-}
 .header {
   display: flex;
   padding: 60px;
@@ -40,14 +24,14 @@ body {
 .header__logo {
   padding-right: 350px;
   font-family: "Pacifico", cursive;
-  font-size: 50px;
+  font-size: 2.9411764706rem;
   font-weight: 600;
 }
 .header__navbox {
   display: flex;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 0.9411764706rem;
   color: #020202;
   text-decoration: none;
   list-style: none;
@@ -73,7 +57,7 @@ body {
 .about__h1 {
   color: #262626;
   font-family: Raleway, sans-serif;
-  font-size: 60px;
+  font-size: 3.5294117647rem;
   font-weight: 800;
   font-style: normal;
   letter-spacing: normal;
@@ -83,7 +67,7 @@ body {
 .about__pe {
   color: #262626;
   font-family: Raleway, sans-serif;
-  font-size: 17px;
+  font-size: 1rem;
   line-height: 27px;
   padding-bottom: 30px;
 }
@@ -116,13 +100,13 @@ body {
 }
 .about2__h2 {
   font-family: Raleway, sans-serif;
-  font-size: 50px;
+  font-size: 2.9411764706rem;
   font-weight: 700;
   color: white;
 }
 .about2__pe2 {
-  font-family: "Raleway", sans-serif;
-  font-size: 17px;
+  font-family: Raleway, sans-serif;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 27px;
   color: #fff;
@@ -153,8 +137,8 @@ body {
   width: 400px;
   height: 100px;
   color: #262626;
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
+  font-family: Raleway, sans-serif;
+  font-size: 1.1764705882rem;
   font-weight: 700;
   line-height: 27px;
   text-align: center;
@@ -178,7 +162,7 @@ body {
 .service__h2 {
   color: #fff;
   font-family: "Raleway-Bold", sans-serif;
-  font-size: 90px;
+  font-size: 5.2941176471rem;
 }
 
 .mainer3 {
@@ -191,15 +175,15 @@ body {
 .mainer3__h2 {
   text-align: center;
   color: #262626;
-  font-family: "Raleway", sans-serif;
-  font-size: 90px;
+  font-family: Raleway, sans-serif;
+  font-size: 5.2941176471rem;
   font-weight: 700;
   line-height: 27px;
 }
 .mainer3__h3 {
   color: #262626;
-  font-family: "Raleway", sans-serif;
-  font-size: 17px;
+  font-family: Raleway, sans-serif;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 27px;
   text-align: center;
@@ -215,7 +199,7 @@ body {
   height: 550px;
 }
 .mainer3__peach {
-  width: 770px;
+  max-width: 770px;
   height: 550px;
   padding-right: 30px;
 }
@@ -260,14 +244,14 @@ body {
   flex-direction: column;
   text-align: left;
   min-height: 500px;
-  background-image: url(/dist/image/bg5.png);
+  background-image: url(image/bg5.png);
   background-position: center;
   background-repeat: no-repeat;
 }
 .mainer4__h2 {
   color: #262626;
-  font-family: "Raleway", sans-serif;
-  font-size: 40px;
+  font-family: Raleway, sans-serif;
+  font-size: 2.3529411765rem;
   font-weight: 700;
   line-height: 27px;
   padding: 30px;
@@ -278,8 +262,8 @@ body {
   width: 541px;
   height: 43px;
   color: #262626;
-  font-family: "Raleway", sans-serif;
-  font-size: 17px;
+  font-family: Raleway, sans-serif;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 27px;
   text-align: left;
@@ -311,7 +295,7 @@ body {
   display: flex;
   flex-direction: column;
   color: #ffffff;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
 }
 .mainer5__h1 {
   text-align: center;
@@ -320,7 +304,7 @@ body {
 }
 .mainer5__p {
   text-align: center;
-  font-size: 17px;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 25px;
 }
@@ -332,7 +316,7 @@ body {
   position: relative;
 }
 .mainer5__blog1 {
-  background-image: url(/dist/image/apple5.png);
+  background-image: url(image/apple5.png);
   background-size: 370px 310px;
   margin-right: 25px;
   width: 370px;
@@ -351,24 +335,24 @@ body {
   height: 78px;
 }
 .mainer5__description1 {
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
+  font-family: Raleway, sans-serif;
+  font-size: 1.1764705882rem;
   font-weight: 700;
 }
 .mainer5__description2 {
-  font-family: "Raleway", sans-serif;
-  font-size: 13px;
+  font-family: Raleway, sans-serif;
+  font-size: 0.7647058824rem;
   font-weight: 300;
 }
 .mainer5__blog2 {
-  background-image: url(/dist/image/smuzi5.png);
+  background-image: url(image/smuzi5.png);
   background-size: 370px 310px;
   margin-right: 25px;
   width: 370px;
   height: 310px;
 }
 .mainer5__blog3 {
-  background-image: url(/dist/image/strow5.png);
+  background-image: url(image/strow5.png);
   background-size: 370px 310px;
   width: 370px;
   height: 310px;
@@ -380,7 +364,7 @@ body {
   margin-top: 70px;
   color: white;
   font-family: Raleway, sans-serif;
-  font-size: 20px;
+  font-size: 1.1764705882rem;
   background-color: #f72b3b;
   align-items: center;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
@@ -393,7 +377,7 @@ body {
 
 /* forma*/
 .mainer6 {
-  background-image: url(/dist/image/6copy.jpg);
+  background-image: url(image/6copy.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
@@ -405,7 +389,7 @@ body {
   text-align: center;
   color: #262626;
   font-family: Raleway, sans-serif;
-  font-size: 90px;
+  font-size: 5.2941176471rem;
   font-weight: 700;
   line-height: 25px;
 }
@@ -413,7 +397,7 @@ body {
   padding: 0px 80px 50px 80px;
   color: #262626;
   font-family: Raleway, sans-serif;
-  font-size: 17px;
+  font-size: 1rem;
   font-weight: 300;
   font-style: normal;
   letter-spacing: normal;
@@ -438,7 +422,7 @@ body {
 }
 .mainer6 .input::placeholder, .mainer6 textarea::placeholder {
   color: white;
-  font-size: 15px;
+  font-size: 0.8823529412rem;
   font-family: "Realwey-Light", sans-serif;
 }
 .mainer6 .input:focus::placeholder {
@@ -458,7 +442,7 @@ body {
 }
 .mainer6 .req {
   padding: 5px;
-  font-size: 20px;
+  font-size: 1.1764705882rem;
   color: white;
   border: 2px solid black;
   height: 50px;
@@ -486,7 +470,7 @@ body {
   margin: 20px;
   width: 200px;
   padding: 5px 25px 5px 5px;
-  font-size: 20px;
+  font-size: 1.1764705882rem;
   color: white;
   border: 2px solid black;
   height: 34px;
@@ -508,7 +492,7 @@ body {
 }
 .mainer6__city, .mainer6__email, .mainer6__tel {
   font-family: "Raleway - Bold", sans-serif;
-  font-size: 17px;
+  font-size: 1rem;
   font-weight: 700;
   text-align: left;
 }
@@ -522,18 +506,18 @@ body {
 }
 .mainer6__fot {
   font-family: Raleway, sans-serif;
-  font-size: 16px;
+  font-size: 0.9411764706rem;
   font-weight: 300;
 }
 .mainer6__fot1 {
   color: #b9b9b9;
   font-family: "Pacifico", sans-serif;
-  font-size: 25px;
+  font-size: 1.4705882353rem;
   font-weight: 400;
 }
 .mainer6__fot2 {
   font-family: Raleway, sans-serif;
-  font-size: 15px;
+  font-size: 0.8823529412rem;
   font-weight: 300;
   line-height: 25px;
 }
