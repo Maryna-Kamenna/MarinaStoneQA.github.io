@@ -1,0 +1,601 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  max-width: 1770px;
+  margin: 0 auto;
+  /* choose*/
+  /* who we are*/
+  /*pistures*/
+  /* search*/
+  /* spain*/
+}
+.body .wrapper {
+  overflow: hidden;
+  min-width: 1200px;
+  margin: 0 auto;
+}
+.body .main {
+  width: 100%;
+  min-height: 82vh;
+  background-image: url(img/bg1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.body .main__h1 {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+}
+@media screen and (max-width: 992px) {
+  .body .main__h1 {
+    font-size: 0.9666666667rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .body .main__h1 {
+    font-size: 1.1666666667rem;
+  }
+}
+.body .main__h2 {
+  color: #f7f5f5;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.3666666667rem;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 6.82px;
+  position: relative;
+  top: 170px;
+}
+@media screen and (max-width: 992px) {
+  .body .main__h2 {
+    font-size: 0.5333333333rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .body .main__h2 {
+    font-size: 0.7rem;
+  }
+}
+.body .main__form {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+.body .main__search {
+  width: 26vw;
+  height: 3, 5vh;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 300px;
+}
+.body .main__battn {
+  width: 7vw;
+  height: 3vh;
+  border: 4px solid #ffffff;
+  background-color: #5474fd;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 300px;
+}
+.body .main__scroll {
+  text-align: center;
+  padding-top: 400px;
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.2333333333rem;
+  font-weight: 400;
+}
+@media screen and (max-width: 992px) {
+  .body .main__scroll {
+    font-size: 0.6333333333rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .body .main__scroll {
+    display: none;
+  }
+}
+.body .main__scr {
+  width: 0.15vw;
+  height: 0.08vh;
+  color: #ffffff;
+  justify-content: center;
+}
+.body .main .nav {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: 0.8vh;
+  background-color: #5474fd;
+  position: relative;
+  top: 240px;
+}
+.body .main__logo {
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.4rem;
+  font-weight: 700;
+  text-align: left;
+  position: relative;
+  top: 31px;
+  z-index: 50;
+  padding-left: 30px;
+}
+@media screen and (max-width: 992px) {
+  .body .main__logo {
+    color: #ffffff;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 0.7333333333rem;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .body .main__logo {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+.body .main__list {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  color: #ffffff;
+  font-family: "Aleo", sans-serif;
+  font-size: 0.2333333333rem;
+  font-weight: 400;
+}
+@media screen and (max-width: 992px) {
+  .body .main__list {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .body .main__list {
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    background: #fffffffa;
+    margin: 0;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+}
+.body .main__item {
+  margin-right: 30px;
+  padding: 12px 0;
+  font-size: 0.2rem;
+}
+.body .main__item:hover {
+  border-top: 3px solid #9c1919;
+  border-bottom: 3px solid #9c1919;
+}
+@media screen and (max-width: 992px) {
+  .body .main__item {
+    text-align: center;
+    display: list-item;
+    width: 100%;
+    border-top: 1px solid #000;
+  }
+}
+.body .main__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Aleo", sans-serif;
+}
+.body .main .navicon {
+  background: #333;
+  display: none;
+  height: 0.02vh;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 0.18vw;
+}
+.body .main .navicon:before,
+.body .main .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+.body .burger__toggle, .body .burger__btn {
+  display: none;
+}
+.body .burger__btn {
+  padding: 28px 20px;
+  float: right;
+}
+@media screen and (max-width: 992px) {
+  .body .burger__btn {
+    display: inline-block !important;
+    text-align: right;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 768px) {
+  .body .burger__btn {
+    display: block;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.body .burger__btn .navicon {
+  display: block;
+}
+.body .burger__btn .navicon:before, .body .burger__btn .navicon:after {
+  display: block;
+}
+.body .burger__btn .navicon:before {
+  top: 5px;
+}
+.body .burger__btn .navicon:after {
+  top: -5px;
+}
+@media screen and (max-width: 992px) {
+  .body .burger__toggle:checked ~ .nav__list {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f9f8fb;
+  }
+  .body .burger__toggle:checked ~ .nav__list:last-child {
+    border-bottom: 1px solid #000;
+  }
+  .body .burger__toggle:checked ~ .nav__btn .navicon {
+    background: transparent;
+  }
+  .body .burger__toggle:checked ~ .nav__btn .navicon:before {
+    transform: rotate(-45deg);
+  }
+  .body .burger__toggle:checked ~ .nav__btn .navicon:after {
+    transform: rotate(45deg);
+  }
+  .body .burger__toggle:checked ~ .nav__btn:not(.steps) .navicon:before, .body .burger__toggle:checked ~ .nav__btn:not(.steps) .navicon:after {
+    top: 0;
+  }
+}
+.body .choose {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 6.85vh;
+  background-image: url(img/bg2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.body .desc {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-top: 170px;
+  padding-left: 55px;
+}
+.body .desc__h3 {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Aleo", sans-serif;
+  font-size: em-calc(36px);
+  font-weight: 400;
+  text-align: left;
+  line-height: 26px;
+}
+.body .desc__text {
+  color: #e8e8e8;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.2666666667rem;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  line-height: 26px;
+}
+.body .desc__battn {
+  width: 2.25vw;
+  height: 0.6vh;
+  background-color: #5474fd;
+}
+.body .pictures {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.body .pictures__house {
+  position: relative;
+  top: 131px;
+  left: -15px;
+  width: 3.5vw;
+  height: 2.2vh;
+}
+.body .pictures__mountain {
+  position: relative;
+  top: 146px;
+  left: 100px;
+  width: 3.5vw;
+  height: 2.2vh;
+}
+.body .search {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 3.37vh;
+  width: 100%;
+  background-color: #333333;
+}
+.body .search__icon1 {
+  width: 0.96vw;
+  height: 0.96vh;
+  color: #e8e8e8;
+  font-family: "Aleo", sans-serif;
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+.body .search .fa-search {
+  color: blue;
+  padding-left: 39px;
+  padding-bottom: 20px;
+}
+.body .search__icon2 {
+  width: 0.96vw;
+  height: 0.96vh;
+  color: #e8e8e8;
+  font-family: "Aleo", sans-serif;
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+.body .search .fa-check-circle {
+  color: #b42323;
+  padding-left: 35px;
+  padding-bottom: 17px;
+}
+.body .search__icon3 {
+  width: 0.96vw;
+  height: 0.96vh;
+  color: #e8e8e8;
+  font-family: "Aleo", sans-serif;
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+.body .search .fa-thumbs-up {
+  color: #aa35c7;
+  padding-left: 35px;
+  padding-bottom: 17px;
+}
+.body .search__icon::after {
+  content: "";
+  width: 19.8%;
+  height: 28, 1%;
+  background: transparent;
+  border: none;
+  border-radius: 48%;
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  left: 50px;
+  top: -50px;
+  border-top: dashed 2px white;
+}
+.body .search__icon:last-child:after {
+  content: none;
+}
+.body .spain {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 1400px;
+}
+.body .spain__up {
+  background-image: url(img/bg3-up.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50%;
+  width: 100%;
+}
+.body .spain__book1 {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 300px;
+  background-color: #232323;
+  opacity: 0.9;
+  position: relative;
+  top: 200px;
+  left: 645px;
+  padding: 30px;
+}
+@media screen and (max-width: 992px) {
+  .body .spain__book1 {
+    top: 230px;
+    left: 65px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .body .spain__book1 {
+    top: 241px;
+    left: 55px;
+  }
+}
+.body .spain__tit {
+  color: #e8e8e8;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.3333333333rem;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+.body .spain__tex {
+  color: #e8e8e8;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.2666666667rem;
+  font-weight: 400;
+  line-height: 26px;
+  padding-bottom: 30px;
+}
+.body .spain__h4 {
+  color: #e8e8e8;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.3333333333rem;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+.body .spain__book-now {
+  width: 225px;
+  height: 60px;
+  background-color: #5474fd;
+  color: #ffffff;
+  font-family: Aleo;
+  font-size: 0.2666666667rem;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+.body .spain__doun {
+  background-image: url(img/bg3-down.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50%;
+  width: 100%;
+}
+.body .spain__book2 {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 300px;
+  background-color: #232323;
+  opacity: 0.9;
+  position: relative;
+  top: 110px;
+  left: 1316px;
+  padding: 30px;
+}
+@media screen and (max-width: 992px) {
+  .body .spain__book2 {
+    top: 85px;
+    left: 375px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .body .spain__book2 {
+    top: 145px;
+    left: 90px;
+  }
+}
+.body .turist {
+  background-image: url(img/bg4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 731px;
+}
+.body .turist__h5 {
+  color: #ffffff;
+  font-family: "Aleo", sans-serif;
+  font-size: 0.5833333333rem;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+}
+.body .turist__review {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.body .turist__man {
+  width: 445px;
+  height: 284px;
+  margin-top: 20px;
+}
+.body .turist__sam {
+  width: 551px;
+  height: 136px;
+  padding: 20px;
+  text-align: left;
+}
+.body .turist__h6 {
+  color: #fefefe;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.3333333333rem;
+  font-weight: 400;
+}
+.body .turist .quote::first-letter {
+  color: #5474fd;
+  font-size: 0.6rem;
+}
+.body .turist__quote {
+  color: #e8e8e8;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.2666666667rem;
+}
+.body .footer {
+  width: 100%;
+  min-height: 268px;
+  background-color: #232323;
+  justify-content: center;
+  align-items: center;
+}
+.body .footer__h7 {
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.4rem;
+  font-weight: 700;
+  letter-spacing: 3.36px;
+  padding-bottom: 15px;
+}
+.body .footer__h8 {
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.2666666667rem;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+  padding-bottom: 20px;
+}
+.body .footer__sosial {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+/*# sourceMappingURL=style.css.map */

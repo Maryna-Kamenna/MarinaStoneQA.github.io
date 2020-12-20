@@ -1,19 +1,11 @@
-@mixin _1200 {
-    @media screen and (max-width: 1200px){
-   @content;
-    }
-}
-@mixin _992 {
-    @media screen and (max-width: 992px){
-   @content;
-    }
-}
-@mixin _768 {
+
+@mixin _768{
     @media screen and (max-width: 768px){
    @content;
     }
 }
-@function rem-calc($font-size:0) {
+
+@function rem-calc($font-size:70px) {
     $remSize: $font-size / $baseFontSize;
     @return #{$remSize}rem;
   } 
