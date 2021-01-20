@@ -11,17 +11,6 @@
 // console.log(s);
 
 
-//  Введите число и выведите на экран отрицателтное положительное или равно нулю оно
-
-// let num = +prompt('Введите число')
-// if (num >0){
-//  console.log('Ввведное число положительно')}
-// else if (num<0){
-//   console.log('Введенное число отрицательное')}
-//  else if (num<0){
-// console.log('Вы ввели ноль')}
-
-
 
 //введите число а на экран вывелись все числа от введенного до 0
 // let i = prompt('Введите число')
@@ -124,6 +113,7 @@
 // console.log(i);
 // }
 
+
  //Запрсить число и проверить простое ли оно. Простое число делиться без остатка токо на себя и еденицу
 
 // let num = +prompt('Введите целое число');
@@ -136,7 +126,7 @@
 //     }
 
 //     if (count == 2 ) { 
-//         console.log('Число нпростое')
+//         console.log('Число простое')
 //     } else {
 //          console.log('Число не простое')
 //     }
@@ -175,27 +165,27 @@
 
  //Написать ф которая принимает 2 числа и знак () + - ; /) 
    
- let num1 = +prompt(' Введите число 1'),
-     num2 = +prompt(' Введите число 2'),
-     symb = prompt(' Введите действие  + - ; /'); 
+//  let num1 = +prompt(' Введите число 1'),
+//      num2 = +prompt(' Введите число 2'),
+//      symb = prompt(' Введите действие  + - ; /'); 
 
-function getCalc(num1, num2, symb = '+') {
-        if (symb =='+'){
-    return num1 + num2;
-    }
-    if (symb =='-'){
-        return num1 - num2;
-    }
-    if (symb =='*'){
-        return num1 * num2;
-    }
-    if (symb =='/'){
-        return num1 / num2;
-    }
-    if (symb ==''){
-        return num1 + num2;
-    }
-    }
- let result = getCalc(num1, num2, symb);
+// function getCalc(num1, num2, symb = '+') {
+//         if (symb =='+'){
+//     return num1 + num2;
+//     }
+//     if (symb =='-'){
+//         return num1 - num2;
+//     }
+//     if (symb =='*'){
+//         return num1 * num2;
+//     }
+//     if (symb =='/'){
+//         return num1 / num2;
+//     }
+//     if (symb ==''){
+//         return num1 + num2;
+//     }
+//     }
+//  let result = getCalc(num1, num2, symb);
 
- console.log(result);
+//  console.log(result);
