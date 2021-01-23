@@ -83,28 +83,28 @@
 
 // №6 конвектор валют
 
-// let usd = +prompt('Введите количство USD')
-// const eur = 1.22;
-// const uan = 0.036;
-// const azn = 0.59;
-// if (usd * eur, usd * uan, usd * azn) {
-//     console.log(usd * eur, usd * uan, usd * azn)
-// } else {
-//     alert("Шо ты тут буквы пишешь-это же конвектор валют!");
-//     result = undefined;
-// }
+let usd = +prompt('Введите количство USD')
+const eur = 1.22;
+const uan = 0.036;
+const azn = 0.59;
+if (usd * eur, usd * uan, usd * azn) {
+    console.log(usd * eur, usd * uan, usd * azn)
+} else {
+    alert("Шо ты тут буквы пишешь-это же конвектор валют!");
+    result = undefined;
+}
 
 
 
 //  №7 покупки
 // let num = +prompt('Веедите сумму к оплате')
-// if (num >200&& num <300) {
+// if (num >200 && num <300) {
 //     console.log('Сумма скидки 3 %')
 // }
-// else if  (num >300&& num >500) {
+// else if  (num >300 && num >500) {
 //     console.log('Сумма скидки 5 %')
 // } 
-// else if (num >500) {
+// else if (num > 500) {
 //     console.log('Сумма скидки 7 %')
 // }
 // else{
@@ -120,17 +120,17 @@
 
 
 // №9 3 вопроса 
-    let sev = prompt('Сумма чисел 2+5? 1 - семь 2 - восемь 3 - три');
-    let ten = prompt('Сумма чисел 3+7? 1 - десять 2 - девять 3 - восемь');
-    let nine = prompt('Сумма чисел 5+4? 1 - восемь  2 - четыре 3 - девять');
-    let score = 0;
-    if (sev == 1)
-        score += 2;
-    if (ten == 1)
-        score += 2;
-    if (nine == 3)
-        score += 2;
-    alert('Вы набрали ' + score);
+    // let sev = prompt('Сумма чисел 2+5? 1 - семь 2 - восемь 3 - три');
+    // let ten = prompt('Сумма чисел 3+7? 1 - десять 2 - девять 3 - восемь');
+    // let nine = prompt('Сумма чисел 5+4? 1 - восемь  2 - четыре 3 - девять');
+    // let score = 0;
+    // if (sev == 1)
+    //     score += 2;
+    // if (ten == 1)
+    //     score += 2;
+    // if (nine == 3)
+    //     score += 2;
+    // alert('Вы набрали ' + score);
 
 
 
