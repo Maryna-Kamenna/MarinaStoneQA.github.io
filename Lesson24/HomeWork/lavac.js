@@ -72,19 +72,19 @@
 // 7. Написать функцию, которая принимает время (часы, минуты, секунды) и выводит его на экран в формате «чч:мм:сс».
 // Если при вызове функции минуты и/или секунды не были переданы, то выводить их как 00.
 
-// function getTime (hour, min, sec){
-//     if ( hour <= 23, min <=60, sec <=60 ){
-//         if (sec == undefined) {
-//             secс= 00 }
-//         console.log(time)
-//     } else{
-//         'Введите правильное время!'
-//     }
-// }
-// let hour = +prompt('Введите часы'),
-//     min = +prompt('Введите минуты'),
-//     sec = +prompt('Введите секунды'),
-//     time = (hour + ":"+ min + ":" + sec);
+function getTime (hour, min, sec){
+    if ( hour <= 23, min <=60, sec <=60 ){
+        if (sec == undefined) {
+            sec= 00 }
+        console.log(time)
+    } else{
+        'Введите правильное время!'
+    }
+}
+let hour = +prompt('Введите часы'),
+    min = +prompt('Введите минуты'),
+    sec = +prompt('Введите секунды'),
+    time = (hour + ":"+ min + ":" + sec);
   
 
 

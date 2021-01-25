@@ -2,12 +2,21 @@
 
 //  Функция для вывода на экран информации об автомобиле;
 
-//  Функция для подсчета необходимого времени для преодоления переданного расстояния со средней скоростью. 
+function carInfo(producer, model, year, speed ) {
+    let producer : "Ford",
+        model : "Mustang",
+        year : 1988,
+        speed : 180,}
 
+    console.log(carInfo);   
+}
+carInfo(car)
+
+
+//  Функция для подсчета необходимого времени для преодоления переданного расстояния со средней скоростью. 
 //  Учтите, что через каждые 4 часа дороги водителю необходимо делать перерыв на 1 час.
 
- 
-let carDescribe ={ 
+let car = { 
     producer : "Ford",
     model : "Mustang",
     year : 1988,
@@ -15,7 +24,7 @@ let carDescribe ={
 }
 
 function carInfo() {
-console.log(carDescribe.producer,carDescribe.model,carDescribe.year,carDescribe.speed);}
+console.log(car.producer, car.model, car.year, car.speed);}
 
 // console.log(carDescribe.producer);
 
@@ -27,24 +36,24 @@ console.log(carDescribe.producer,carDescribe.model,carDescribe.year,carDescribe.
 
 // //Функция сложения 2-х объектов-дробей;
 // function drobi (num1, num1){
-//     let res1 = num1 + num2;
+//     let res1 =  this.num1 + this.num2;
 //     console.log(res1)
 // };
 
 // //Функция вычитания 2-х объектов-дробей;
 // function drobi (num1, num1){
-//     let res2 = num1 - num2;
+//     let res2 = this.num1 - this.num2;
 //     console.log(res2)
 // };
 // //Функция умножения 2-х объектов-дробей;
 // function drobi (num1, num1){
-//     let res3 = num1 * num2;
+//     let res3 = this.num1 * this.num2;
 //     console.log(res3)
 // };
 
 // //Функция деления 2-х объектов-дробей;
 // function drobi (num1, num1){
-//     let res4= num1 / num2;
+//     let res4 = this.num1 / this.num2;
 //     console.log(res4)
 // };
 
@@ -56,7 +65,7 @@ console.log(carDescribe.producer,carDescribe.model,carDescribe.year,carDescribe.
 
 function time () {
     
-}
+} 
 Функция вывода времени на экран;
 
 Функция изменения времени на переданное количество секунд;
