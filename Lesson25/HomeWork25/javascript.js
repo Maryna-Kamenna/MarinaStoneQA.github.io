@@ -2,15 +2,18 @@
 
 //  Функция для вывода на экран информации об автомобиле;
 
-function carInfo(producer, model, year, speed ) {
-    let producer : "Ford",
-        model : "Mustang",
-        year : 1988,
-        speed : 180,}
 
-    console.log(carInfo);   
+let car = { 
+    producer : "Ford",
+    model : "Mustang",
+    year : 1988,
+    speed : 180,
+    carInfo: function () {
+        return  "producer " + this.producer + " model " + this.model + " year " + this.year + " speed "  + this.speed
+    }
 }
-carInfo(car)
+alert(car.carInfo ());
+
 
 
 //  Функция для подсчета необходимого времени для преодоления переданного расстояния со средней скоростью. 
@@ -21,12 +24,13 @@ let car = {
     model : "Mustang",
     year : 1988,
     speed : 180,
-}
+    getTime: function () {
+        let way = 0;
+        way / speed * 60 
+        }
+    }
 
-function carInfo() {
-console.log(car.producer, car.model, car.year, car.speed);}
-
-// console.log(carDescribe.producer);
+alert(car.getTime());
 
 //2. Создать объект, хранящий в себе отдельно числитель и знаменатель дроби, и следующие функции для работы с этим объектом: 
 
@@ -61,18 +65,3 @@ console.log(car.producer, car.model, car.year, car.speed);}
 
 
 
-3. Создать объект, описывающий время (часы, минуты, секунды), и следующие функции для работы с этим объектом: 
-
-function time () {
-    
-} 
-Функция вывода времени на экран;
-
-Функция изменения времени на переданное количество секунд;
-
-Функция изменения времени на переданное количество минут;
-
-Функция изменения времени на переданное количество часов. 
-
-Учтите, что в последних 3-х функциях, при изменении одной части времени, может измениться и другая. 
-Например, если ко времени «20:30:45» добавить 30 секунд, то должно получиться «20:31:15», а не «20:30:75».

@@ -35,13 +35,13 @@
 
 // let num1 = +prompt('Введите первую цифру'),
 //     num2 = +prompt('Введите вторую цифру'),
-//     num3 = +prompt('Введите третью цифру'),
-//     result = ('num1' + 'num2' + 'num3');
+//     num3 = +prompt('Введите третью цифру');
 
-// function getUnit() {
-//     console.log(result);
-//  }
-// getUnit(4,5,6)
+// function getConcat(num1, num2, num3) {
+//     result = [num1,num2,num3]
+//    console.log(result.join(''));
+// }
+// getConcat(num1,num2,num3)
 
 
 // 4. Написать функцию, которая принимает длину и ширину прямоугольника и вычисляет его площадь.
