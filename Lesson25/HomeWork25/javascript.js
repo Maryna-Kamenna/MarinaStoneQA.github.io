@@ -2,7 +2,6 @@
 
 //  Функция для вывода на экран информации об автомобиле;
 
-
 let car = { 
     producer : "Ford",
     model : "Mustang",
@@ -32,11 +31,13 @@ let car = {
 
 alert(car.getTime());
 
+
 //2. Создать объект, хранящий в себе отдельно числитель и знаменатель дроби, и следующие функции для работы с этим объектом: 
 
 // function drobi (num1, num1){
 //     console.log()
 // };
+
 
 // //Функция сложения 2-х объектов-дробей;
 // function drobi (num1, num1){
@@ -44,16 +45,20 @@ alert(car.getTime());
 //     console.log(res1)
 // };
 
+
 // //Функция вычитания 2-х объектов-дробей;
 // function drobi (num1, num1){
 //     let res2 = this.num1 - this.num2;
 //     console.log(res2)
 // };
+
+
 // //Функция умножения 2-х объектов-дробей;
 // function drobi (num1, num1){
 //     let res3 = this.num1 * this.num2;
 //     console.log(res3)
 // };
+
 
 // //Функция деления 2-х объектов-дробей;
 // function drobi (num1, num1){
@@ -61,7 +66,7 @@ alert(car.getTime());
 //     console.log(res4)
 // };
 
-// Функция сокращения объекта-дроби. -н е знаю как это
+// Функция сокращения объекта-дроби. -не знаю как это
 
 
 
