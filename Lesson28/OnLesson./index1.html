@@ -1,0 +1,65 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="menu"> 
+        <ul>
+            <li><button onclick="showContent(1)"></button></li>
+            <li><button onclick="showContent(2)"></button></li>
+            <li><button onclick="showContent(3)"></button></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="text1">Text 1</div>
+        <div class="text2">Text 2</div>
+        <div class="text3">Text 3</div>
+    </div>
+    <style>
+        body{display: flex;}
+        .menu {
+            flex: 1;
+        }
+        .content {
+            flex: 3;
+        }
+        .content div {
+            position: absolute;
+        }
+        .text2, .text3 {
+            display: none;
+        }
+    </style>
+    <script src="06_attr.js" > </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="bar">
+        <div class="progress"></div>
+    </div>
+
+
+    <button onclick="increas">Увеличить</button>
+
+    <style>
+        .bar{ width: 500px; height: 40px; border: 2px solid;}
+        .progress{background-color: red; width: 50%; height: 100%;}
+    </style>
+
+    <script src="06_attr.js"> </script>
+</body>
+</html>
