@@ -73,46 +73,46 @@
 
 // Покупка продукта. Функция принимает название продукта и отмечает его как купленный.
 
-let shoppingList = [
-    {
-        name: "Tekila",
-        quantity: 2,
-        IsBought: true,
-    },
-    {
-        name: "lime",
-        quantity: 4,
-        IsBought: false,
-    },
-    {
-        name: "whiskey",
-        quantity: 1,
-        IsBought: false,
-    },
-    {
-        name: "meat",
-        quantity: 5,
-        IsBought: true,
-    },
-    {
-        name: "beer",
-        quantity: 15,
-        IsBought: false,
-    },
+// let shoppingList = [
+//     {
+//         name: "Tekila",
+//         quantity: 2,
+//         IsBought: true,
+//     },
+//     {
+//         name: "lime",
+//         quantity: 4,
+//         IsBought: false,
+//     },
+//     {
+//         name: "whiskey",
+//         quantity: 1,
+//         IsBought: false,
+//     },
+//     {
+//         name: "meat",
+//         quantity: 5,
+//         IsBought: true,
+//     },
+//     {
+//         name: "beer",
+//         quantity: 15,
+//         IsBought: false,
+//     },
 
-]
+// ]
 
-function buyItem(){ 
+// function buyItem(){ 
 
-let index = arr.findIndex (x => x.name === item);
+// let index = arr.findIndex (x => x.name === item);
 
-if ( index >= 0 && arr[index].IsBought != true){
-    arr[index].IsBought = true;
-}
+// if ( index >= 0 && arr[index].IsBought != true){
+//     arr[index].IsBought = true;
+// }
 
-console.log(arr[index])
+// console.log(arr[index])
 
-buyItem(shoppingList, 'lime')
+// buyItem(shoppingList, 'lime')
 
 
 
@@ -261,51 +261,55 @@ buyItem(shoppingList, 'lime')
 
 
 
-// // 4. Создать массив аудиторий академии. Объект-аудитория состоит из названия, количества посадочных мест (от 10 до 20) и названия факультета, для которого она предназначена. Написать несколько функций для работы с ним^
+// 4. Создать массив аудиторий академии. Объект-аудитория состоит из названия, количества посадочных мест (от 10 до 20) и названия факультета, для которого она предназначена. Написать несколько функций для работы с ним^
 
 
-// let auditoriums = [
-//     {
-//         name: "Computer class 1",
-//         size: 15,
-//         faculty: "IT",
-//         // id: 1,
-//     },
-//     {
-//         name: "Computer class 2",
-//         size: 19,
-//         faculty: "IT",
-//         // id: 2,
-//     },
-//     {
-//         name: "Phys laboratory 1",
-//         size: 16,
-//         faculty: "Physics",
-//         // id: 3,
-//     },
-//     {
-//         name: "Phys laboratory 2",
-//         size: 13,
-//         faculty: "Physics",
-//         // id: 4,
-//     },
-//     {
-//         name: "English class",
-//         size: 12,
-//         faculty: "Foreign Languages",
-//         // id: 5,
-//     },
-//     {
-//         name: "Klingon class",
-//         size: 18,
-//         faculty: "Foreign Languages",
-//         // id: 5,
-//     },
-// ]
-// // Вывод на экран всех аудиторий;
-// // Вывод на экран аудиторий для указанного факультета;
-// // Вывод на экран только тех аудиторий, которые подходят для переданной группы. Объект-группа состоит из названия, количества студентов и названия факультета;
-// // Функция сортировки аудиторий по количеству мест;
-// // Функция сортировки аудиторий по названию (по алфавиту).
+let auditoriums = [
+    {
+        name: "Computer class 1",
+        size: 15,
+        faculty: "IT",
+        // id: 1,
+    },
+    {
+        name: "Computer class 2",
+        size: 19,
+        faculty: "IT",
+        // id: 2,
+    },
+    {
+        name: "Phys laboratory 1",
+        size: 16,
+        faculty: "Physics",
+        // id: 3,
+    },
+    {
+        name: "Phys laboratory 2",
+        size: 13,
+        faculty: "Physics",
+        // id: 4,
+    },
+    {
+        name: "English class",
+        size: 12,
+        faculty: "Foreign Languages",
+        // id: 5,
+    },
+    {
+        name: "Klingon class",
+        size: 18,
+        faculty: "Foreign Languages",
+        // id: 5,
+    },
+]
+show: function(){
+
+}
+
+// Вывод на экран всех аудиторий;
+// Вывод на экран аудиторий для указанного факультета;
+// Вывод на экран только тех аудиторий, которые подходят для переданной группы. Объект-группа состоит из названия, количества студентов и названия факультета;
+// Функция сортировки аудиторий по количеству мест;
+// Функция сортировки аудиторий по названию (по алфавиту).
 
 

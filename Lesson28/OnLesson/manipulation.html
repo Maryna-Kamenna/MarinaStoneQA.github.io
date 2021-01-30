@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Работа с узлами DOM</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            let list = document.getElementById("list");
+            for (let i = 0; i < 5; i++) {
+                let li = document.createElement('li');
+                li.innerText = `List item ${i+1}`;
+                list.appendChild(li);
+            }
+        }
+
+        function selectFirstChild() {
+            let list = document.getElementById("list");
+            // Получение первого дочернего элемента в списке.
+            let child = list.firstChild;
+            if (child != null) {
+                // добавление атрибута style="color:red" для выбранного элемента.
+                child.style.color = "red";
+            }
+        }
+
+        function selectLastChild() {
+            let list = document.getElementById("list");
+            // Получение последнего дочернего элемента в списке.
+            let child = list.lastChild;
+            if (child != null) {
+                child.style.color = "red";
+            }
+        }
+
+        let node = null;
+
+        function selectNextNode() {
+            resetColor();
+            if (node == null) {
+                let list = document.getElementById("list");
+                node = list.firstChild;
+                node.style.color = "green";
+                return;
+            }
+            // Получение следующего элемента, которые в дереве находиться на одном уровне.
+            node = node.nextSibling;
+            console.log(node);
+            if (node != null) {
+                node.style.color = "green";
+            }
+        }
+
+        function selectPrevNode() {
+            resetColor();
+            if (node == null) {
+                let list = document.getElementById("list");
+                node = list.lastChild;
+                node.style.color = "green";
+                return;
+            }
+            // Получение предыдущего элемента, которые в дереве находиться на одном уровне.
+            node = node.previousSibling;
+            if (node != null) {
+                node.style.color = "green";
+            }
+        }
+
+        function resetColor() {
+            let liList = document.getElementsByTagName("li");
+            for (let i = 0; i < liList.length; i++) {
+                liList[i].setAttribute("style", "color:black");
+            }
+        }
+
+        function createNewChild() {
+            let list = document.getElementById("list");
+            // создание элемента li
+            let item = document.createElement("li");
+            item.innerHTML = "NEW ITEM";
+            // добавление созданного элемента в конце.
+            list.appendChild(item);
+        }
+
+        function removeLastChild() {
+            let list = document.getElementById("list");
+            let item = list.lastChild;
+            if (item != null) {
+                // удаление выбранного элемента из дерева.
+                list.removeChild(item);
+            }
+        }
+
+        function createNewChildAtStart() {
+            let list = document.getElementById("list");
+            let item = document.createElement("li");
+            item.innerHTML = "NEW ITEM";
+            if (list.firstChild != null) {
+                // вставка элемента перед указанным элементом.
+                list.insertBefore(item, list.firstChild);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <ul id="list"></ul>
+    <br />
+    <input type="button" onclick="selectFirstChild()" style="width: 210px;" value="Выбрать первый элемент" /><br />
+    <input type="button" onclick="selectLastChild()" style="width: 210px;" value="Выбрать последний элемент" /><br />
+    <input type="button" onclick="selectNextNode()" style="width: 210px;" value="Выбрать следующий элемент" /><br />
+    <input type="button" onclick="selectPrevNode()" style="width: 210px;" value="Выбрать предыдущий элемент" /><br />
+    <input type="button" onclick="createNewChild()" style="width: 210px;" value="Добавить элемент" /><br />
+    <input type="button" onclick="removeLastChild()" style="width: 210px;" value="Удалить элемент" /><br />
+    <input type="button" onclick="createNewChildAtStart()" style="width: 210px;" value="Добавить  в начало" /><br />
+</body>
+
+</html>

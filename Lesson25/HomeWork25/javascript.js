@@ -2,32 +2,35 @@
 
 //  Функция для вывода на экран информации об автомобиле;
 
-// function carInfo(producer, model, year, speed ) {
-//     let producer : "Ford",
-//         model : "Mustang",
-//         year : 1988,
-//         speed : 180
+// let mashina = {
+//     production: "Toyota",
+//     model: "Rav",
+//     year: "2018",
+//     avgSpeed: 150,
 
-//     console.log(carInfo);   
-// }
-// carInfo(car)
+//     show: function () {
+//       alert("production - " + this.production + ", " + "model - " + this.model + ", " + "year - " + this.year +", " +"avg speed - " +this.avgSpeed);
+//     },
+//   };
 
-
-
+//   mashina.show();
 
 
 //  Функция для подсчета необходимого времени для преодоления переданного расстояния со средней скоростью. 
-//  Учтите, что через каждые 4 часа дороги водителю необходимо делать перерыв на 1 час.
 
-// let car = { 
-//     producer : "Ford",
-//     model : "Mustang",
-//     year : 1988,
-//     speed : 180,
+// let mashina = {
+//     production: "Toyota",
+//     model: "Rav",
+//     year: "2018",
+//     avgSpeed: 150,
+
+//     time: function () {
+//     let dist = 500
+//     time = dist/this.avgSpeed 
+//     console.log (time)
+//   }
 // }
-
-// function carInfo() {
-// console.log(car.producer, car.model, car.year, car.speed);}
+//   mashina.time();
 
 
 
@@ -60,27 +63,25 @@
 //     console.log(res4)
 // };
 
-// Функция сокращения объекта-дроби. -не знаю как это
+
 
 
 
 //3. Создать объект, описывающий время (часы, минуты, секунды), и следующие функции для работы с этим объектом: 
-
-// let time ={
+    
+//Функция вывода времени на экран;
+// let time = {
 //     hours:14,
 //     minuts:15,
 //     seconds:37,
+
+//     getTime: function (){
+//     console.log(`${this.hours}:${this.minuts}:${this.seconds}`) 
 // }
-    
-//Функция вывода времени на экран;
-let time ={
-    hours:14,
-    minuts:15,
-    seconds:37,
-}
-function getTime(){
-    return hours,minuts,seconds
-}
+// }
+//time.getTime()
+
+
 
 // Функция изменения времени на переданное количество секунд;
 
@@ -90,3 +91,5 @@ function getTime(){
 
 // Учтите, что в последних 3-х функциях, при изменении одной части времени, может измениться и другая. 
 // Например, если ко времени «20:30:45» добавить 30 секунд, то должно получиться «20:31:15», а не «20:30:75».
+
+
