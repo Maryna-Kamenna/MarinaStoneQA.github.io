@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hendler</title>
+  </head>
+
+  <body>
+    <!-- <p id="count">0</p>
+    <button id="btn">Like +</button>
+    <script>
+      let btn = document.ElementById('btn');
+      let count = document.ElementById('count');
+      let likes = 0; 
+
+      btn.addEventListener('click',function(){
+          likes++
+          count.innerText = likes;
+      });
+     </script> -->
+
+    <!-- <p id="text">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum."
+    </p>
+
+    <script>
+      let text = document.getElementById("text");
+
+      text.addEventListener("contextmenu", function (e) {
+        e.preventDefoult();
+      });
+
+      text.addEventListener("mousedoun", function (e) {
+        e.preventDefoult();
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.ctrlKey && event.code == "KeyA") {
+          event.preventDefault();
+        }
+      });
+    </script> -->
+
+    <!-- Даны картинки. привяжите к каждой картинке события, 
+    чтоб по клику на картинку алертом выводился ее src
+    <div class="imgs">
+      <img src="thu1.jpg" alt="картинка 1" class="image" />
+      <img src="unn2.jpg" alt="картинка 2" class="image" />
+    </div>
+
+    <script>
+      let imgs = document.querySelector(".imgs");
+      imgs.addEventListener("click", function (e) {
+        alert(e.target.currentSrc);
+      });
+    </script> -->
+    <!-- 
+    Даны ссылки. привяжите всем ссылкам событие- по наведению на ссылку
+    в атрибут  title запишиться ее текст 
+
+    <div>
+      <a href="" title=""> Текст 1</a>
+      <a href="" title=""> Текст 2</a>
+    </div>
+
+    <script>
+      let as = document.querySelector('div');
+
+      as.addEventListener("mouseover", function (e) {
+        let title = e.target.innerText;
+
+        if (!e.target.title && e.target.nodeName == "A") {
+          e.target.setAttribute("title", title);
+        }
+      });
+    </script> -->
+
+    Дополните предыдущую задачу: после первого наведению на ссылку следует
+    отвязать от нее событие, которое добавляет href в конец текста.
+
+    <div>
+      <a href="/link1" title=""> Текст 1</a>
+      <a href="/link2" title=""> Текст 2</a>
+    </div>
+
+    <script>
+      let as = document.querySelector("div");
+
+      as.addEventListener("mouseover", function (e) {
+        let first = e.target.innerText;
+
+        if (e.target.nodeName == "A" && first == e.target.innerText) {
+          isUpdated = true;
+          e.target.innerText = e.target.innerText + +"(" + e.tsrget.href + ")";
+        }
+
+        // if (!e.target.title && e.target.nodeName == "A") {
+        //   e.target.setAttribute("title", title);
+        // }
+      });
+    </script>
+  </body>
+</html>
