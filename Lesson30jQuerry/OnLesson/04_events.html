@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events</title>
+</head>
+
+<body>
+    
+    <style>
+        p {display: none;}
+        h2 {background-color: red; border: 2px solid;}
+
+    </style>
+
+    <section class="accordions">
+        <div class="accordion">
+            <h2>Вопрос 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab est qui, eius blanditiis asperiores repellat. Exercitationem non numquam reiciendis, quaerat quasi nihil suscipit, voluptates ipsa commodi nemo aspernatur fuga perspiciatis!Vitae, beatae animi! Ipsum eveniet magnam et reprehenderit, consequuntur vero aspernatur laborum ex delectus esse nostrum omnis, quas facilis quaerat alias, dolores enim id? Eaque atque impedit qui earum at!</p>
+        </div>
+        <div class="accordion">
+            <h2>Вопрос 2</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi maiores dolore quaerat animi esse beatae eius cumque minima accusantium aliquid ut, quidem non eaque iste voluptate eveniet recusandae inventore? Fugit.Dolore cum pariatur natus beatae dolores odio dolorum earum deserunt quae doloribus voluptatibus enim in possimus, libero, animi at delectus fugit quia, nobis dignissimos consequuntur! Excepturi sint libero nam quis!</p>
+        </div>
+        <div class="accordion">
+            <h2>Вопрос 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, laboriosam sequi! Qui sit nemo ipsum id sint pariatur commodi dolore natus recusandae magnam, accusamus velit odit dolor provident perspiciatis? Distinctio?Porro dicta saepe tempora aperiam a eligendi aliquam neque ex repudiandae assumenda ut beatae pariatur animi debitis recusandae officia quos veniam harum autem, odit fugiat nihil hic earum incidunt! Perspiciatis!</p>
+        </div>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+
+        $(function () {
+            $("h2").on("click", function () {
+                let state = false;
+                if ($(this).next("p").css("display") == "block") {
+                    state = true;
+                }
+                $("p").each(function () {
+                    $(this).hide();
+                });
+                if (!state) {
+                    $(this).next("p").show();
+                }
+            })
+        })
+
+
+       /* $(function () {
+            $(".open").on("click", function () {
+                $(".fon").fadeIn();
+                return false
+            });
+
+            $("#btn").on("click", function () {
+                $(".fon").fadeOut();
+            });
+
+            $(".fon").on("click", function (e) {
+                if ($(e.target).closest('.popup').length == 0) {
+                    $(".fon").fadeOut();					
+                }
+            });
+
+        });*/
+    </script>
+        
+    <!-- <style> 
+        .fon {
+            display: none;
+        }
+        .fon::before {
+            content: '';
+            background-color: #000;
+            opacity: 0.7;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: 99;
+        }
+
+        .popup {
+            position: absolute;
+            width: 400px;
+            height: 300px;
+            top: 20%;
+            left: 40%;
+            background: #fff;
+            z-index: 999;
+        }
+
+    </style> -->
+
+    <!--<div class="fon">
+        <div class="popup">
+            <button id="btn">скрыть текст</button>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti quisquam, eos iure recusandae dolores
+                    perferendis suscipit, sit sapiente id voluptatibus est similique dolore, rerum impedit itaque molestias
+                    quaerat minima reiciendis!</p>
+                <p>Enim doloremque sunt commodi sapiente odit facilis ut amet quia? Sint eos aliquid perferendis magnam nostrum,
+                    consectetur, esse temporibus, animi qui accusantium optio magni voluptatum est quos explicabo exercitationem
+                    in.</p>
+        </div>
+    </div>
+
+    <a href="#" class="open">отрыть окно</a>-->
+
+</body>
+
+</html>

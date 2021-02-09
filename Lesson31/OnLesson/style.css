@@ -1,0 +1,95 @@
+body {
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+}
+
+.head {
+  position: absolute;
+  z-index: 9;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 39px;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  color: ;
+}
+.slide .slider {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 100;
+  max-width: 700px;
+}
+
+.desc {
+  max-width: 510px;
+  font-size: 19px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.action {
+  background-color: #eecd31;
+  height: 60px;
+  width: 180px;
+  color: white;
+  border: 1px solid #eecd31;
+  border-radius: 50px;
+  padding: 10px 15px;
+}
+
+.slick-next,
+.slick-prev {
+  font-size: 30px;
+  position: absolute;
+  top: 50px;
+  z-index: 9;
+}
+
+.slick-next {
+  right: 40px;
+}
+
+.slick-prev {
+  left: 40px;
+}
+
+.slick-dots {
+  position: absolute;
+  list-style: none;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+  justify-content: center;
+  bottom: 50px;
+}
+
+.slick-dots button {
+  font-size: 0;
+  border-radius: 62%;
+  height: 15px;
+  width: 15px;
+  border: 0;
+  margin-right: 10px;
+}
+
+.slick-dots .slick-active button {
+  background-color: red;
+}

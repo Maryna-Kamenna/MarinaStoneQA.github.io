@@ -51,6 +51,7 @@
 
     <!-- Даны картинки. привяжите к каждой картинке события, 
     чтоб по клику на картинку алертом выводился ее src
+    
     <div class="imgs">
       <img src="thu1.jpg" alt="картинка 1" class="image" />
       <img src="unn2.jpg" alt="картинка 2" class="image" />
@@ -62,6 +63,7 @@
         alert(e.target.currentSrc);
       });
     </script> -->
+
     <!-- 
     Даны ссылки. привяжите всем ссылкам событие- по наведению на ссылку
     в атрибут  title запишиться ее текст 
@@ -83,10 +85,10 @@
       });
     </script> -->
 
-    Дополните предыдущую задачу: после первого наведению на ссылку следует
-    отвязать от нее событие, которое добавляет href в конец текста.
+    <!-- Дополните предыдущую задачу: после первого наведению на ссылку следует
+    отвязать от нее событие, которое добавляет href в конец текста. -->
 
-    <div>
+    <!-- <div>
       <a href="/link1" title=""> Текст 1</a>
       <a href="/link2" title=""> Текст 2</a>
     </div>
@@ -97,15 +99,64 @@
       as.addEventListener("mouseover", function (e) {
         let first = e.target.innerText;
 
-        if (e.target.nodeName == "A" && first == e.target.innerText) {
-          isUpdated = true;
-          e.target.innerText = e.target.innerText + +"(" + e.tsrget.href + ")";
+        if (e.target.nodeName == "A" && !e.target.classList.add("added")) {
+          e.target.innerText = e.target.innerText + "(" + e.tsrget.href + ")";
+          e.target.classList.add("added");
         }
+    });
+    </script> -->
 
-        // if (!e.target.title && e.target.nodeName == "A") {
-        //   e.target.setAttribute("title", title);
-        // }
-      });
+    <!-- Привяжите всем инпутам следующее событие - по потери фокуса каждый инпут
+    выводит свое value в абзац с id="test" 
+
+  <div>
+      <input type="text" id="text" />
+      <input type="text" id="text" />
+      <input type="text" id="text" />
+    </div>
+
+    <p id="test"></p>
+
+    <script>
+      let elems = document.querySelectorAll("input");
+      let text = document.querySelector("#test");
+
+      for (var i = 0; i < elems.length; i++) {
+        elems[i].addEventListener("change", func);
+      }
+
+      function func() {
+        if (this.value) {
+          text.innerHTML = this.value;
+        }
+      }
+    </script> -->
+
+    <!-- <script src="javascript.js"></script> -->
+
+    Для всех инпутов сделайте так, чтобы они выводили свой value алертом при
+    нажатии на любой из них, но только по первому нажатию. Повторное нажатие на
+    инпут не должно вызывать реакции.
+
+    <div>
+      <input type="text" id="text" />
+      <input type="text" id="text" />
+      <input type="text" id="text" />
+    </div>
+
+    <script>
+      let elems = document.querySelectorAll("input");
+
+      for (var i = 0; i < elems.length; i++) {
+        elems[i].addEventListener("focus", func);
+      }
+
+      function func() {
+        if (this.value) {
+          alert(this.value);
+          this.removeEventListener("focus", func);
+        }
+      }
     </script>
   </body>
 </html>

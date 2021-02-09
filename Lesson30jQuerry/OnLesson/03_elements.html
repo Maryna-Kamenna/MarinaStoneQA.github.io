@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elements</title>
+</head>
+
+<body>
+    <button id="btn">скрыть текст</button>
+    <div class="text">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti quisquam, eos iure recusandae dolores
+            perferendis suscipit, sit sapiente id voluptatibus est similique dolore, rerum impedit itaque molestias
+            quaerat minima reiciendis!</p>
+        <p>Enim doloremque sunt commodi sapiente odit facilis ut amet quia? Sint eos aliquid perferendis magnam nostrum,
+            consectetur, esse temporibus, animi qui accusantium optio magni voluptatum est quos explicabo exercitationem
+            in.</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            $(`<p>новый параграф</p>`).appendTo(".text");
+            $(".btn").text('новый текст для кнопки')
+        });
+    </script>
+</body>
+
+</html>
