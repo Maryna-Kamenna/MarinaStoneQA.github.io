@@ -1,7 +1,6 @@
 body {
   background-color: black;
   color: white;
-  box-sizing: border-box;
 }
 
 .head {
@@ -10,8 +9,10 @@ body {
   width: 95%;
   display: flex;
   justify-content: space-between;
+  flex-direction: initial;
   margin: 0;
-  box-sizing: border-box;
+  padding: 10px 15px;
+  align-items: center;
 }
 
 .logo {
@@ -21,8 +22,8 @@ body {
 .nav {
   display: flex;
   list-style: none;
-  color: ;
 }
+
 .slide .slider {
   width: 100vw;
   height: 100vh;
@@ -37,12 +38,13 @@ body {
   font-size: 50px;
   font-weight: 100;
   max-width: 700px;
+  margin: 0;
 }
 
 .desc {
   max-width: 510px;
   font-size: 19px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .action {
@@ -50,7 +52,7 @@ body {
   height: 60px;
   width: 180px;
   color: white;
-  border: 1px solid #eecd31;
+  border: 2px solid #eecd31;
   border-radius: 50px;
   padding: 10px 15px;
 }
@@ -72,6 +74,7 @@ body {
 }
 
 .slick-dots {
+  display: flex;
   position: absolute;
   list-style: none;
   margin: 0 auto;

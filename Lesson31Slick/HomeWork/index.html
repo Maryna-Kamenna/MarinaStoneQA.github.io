@@ -5,8 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <script src="script.js"></script>
+    <header>
+      <h2> our featured work</h1>
+
+      <h1>WE CREATE ENGAGING EXPIRIENCES THROUGH CREATYVITY & CRAFT
+      </h2>
+    </header>
+<section class="slider"> 
+    <div class="slide">
+      <p><a href="#" class="rollover"> </a></p>
+      <p class="size">
+        Lisa Fox <br />
+        Lead Designer
+      </p>
+    </div>
+    <div class="slide">
+      <p><a href="#" class="rollover1"> </a></p>
+      <p class="size">
+        Alex Cutter<br />
+        Developer
+      </p>
+    </div>
+    <div class="slide" >
+      <p><a href="#" class="rollover2"> </a></p>
+      <p class="size">
+        Elena Simpson<br />
+        Artist
+      </p>
+    </div>
+    <div class="slide">
+      <p><a href="#" class="rollover3"> </a></p>
+      <p class="size">
+        Lily Allen<br />
+        Graphic Designer
+      </p>
+    </div>
+    <div class="slide">
+      <p><a href="#" class="rollover"> </a></p>
+      <p class="size">
+        Lisa Fox <br />
+        Lead Designer
+      </p>
+    </div>
+
+  </section>
+
+    <script>
+      $(".slider").slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 2.5,
+        adaptiveHeight: true,
+        prevArrow: '<a class="slick-prev"><</a>',
+        nextArrow: '<a class="slick-next">></a>',
+        responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+        ],
+      });
+    </script>
   </body>
 </html>

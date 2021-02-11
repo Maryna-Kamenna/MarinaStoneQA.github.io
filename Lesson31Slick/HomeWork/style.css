@@ -1,0 +1,89 @@
+* {
+  transition: all 0.4s else-out;
+}
+.slider .slide {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 60px;
+  font: 800;
+}
+
+h2 {
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+
+.slick-next,
+.slick-prev {
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  z-index: 9;
+}
+
+.slick-next {
+  right: 40px;
+}
+
+.slick-prev {
+  left: 40px;
+}
+
+a.rollover {
+  background: url(/Lesson31Slick/HomeWork/img/lisa.png); /* Путь к файлу с исходным рисунком  */
+  display: block; /*  Рисунок как блочный элемент */
+  width: 500px; /* Ширина рисунка */
+  height: 500px; /*  Высота рисунка */
+}
+a.rollover:hover {
+  background: url(/Lesson31Slick/HomeWork/img/lisahover.png); /* Путь к файлу с заменяемым рисунком  */
+}
+
+a.rollover1 {
+  background: url(/Lesson31Slick/HomeWork/img/alex.png); /* Путь к файлу с исходным рисунком  */
+  display: block; /*  Рисунок как блочный элемент */
+  width: 269px; /* Ширина рисунка */
+  height: 268px; /*  Высота рисунка */
+}
+a.rollover1:hover {
+  background: url(/Lesson31Slick/HomeWork/img/lisahover.png); /* Путь к файлу с заменяемым рисунком  */
+}
+
+a.rollover2 {
+  background: url(/Lesson31Slick/HomeWork/img/elena.png); /* Путь к файлу с исходным рисунком  */
+  display: block; /*  Рисунок как блочный элемент */
+  width: 269px; /* Ширина рисунка */
+  height: 268px; /*  Высота рисунка */
+}
+a.rollover2:hover {
+  background: url(/Lesson31Slick/HomeWork/img/lisahover.png); /* Путь к файлу с заменяемым рисунком  */
+}
+
+a.rollover3 {
+  background: url(/Lesson31Slick/HomeWork/img/lily.png); /* Путь к файлу с исходным рисунком  */
+  display: block; /*  Рисунок как блочный элемент */
+  width: 269px; /* Ширина рисунка */
+  height: 268px; /*  Высота рисунка */
+}
+a.rollover3:hover {
+  background: url(/Lesson31Slick/HomeWork/img/lisahover.png); /* Путь к файлу с заменяемым рисунком  */
+}
