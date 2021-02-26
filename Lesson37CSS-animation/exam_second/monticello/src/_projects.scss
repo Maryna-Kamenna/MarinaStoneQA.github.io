@@ -1,0 +1,117 @@
+.projects {
+  &__goal {
+    height: 273px;
+    font-size: rem-calc(44px);
+    font-family: $boldFont;
+    color: $dblueColor;
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  &__line {
+    padding-top: 100px;
+    border-bottom: solid 1px $darkColor;
+    box-sizing: border-box;
+    height: 2px;
+    width: 115px;
+    margin: 0 auto;
+  }
+
+  &__center {
+    min-height: 680px;
+    background-color: $whiteColor;
+    color: $dblueColor;
+    position: relative;
+  }
+
+  .center {
+    &__back {
+      position: absolute;
+      top: 0;
+
+      height: 470px;
+      width: 685px;
+
+      &--top {
+        background-color: $blueBack;
+        left: 0;
+      }
+
+      &--bottom {
+        background-color: $purpleBack;
+        right: 0;
+      }
+
+      //z-index: 100;
+    }
+
+    &__container {
+      padding-top: 70px;
+
+      @include _480 {
+        padding-top: 50px;
+      }
+    }
+
+    &__info {
+      padding-top: 55px;
+    }
+
+    .info {
+      &__name {
+        font-size: rem-calc(22px);
+        font-family: $mainFont;
+        margin-bottom: 0;
+      }
+
+      &__title {
+        font-size: rem-calc(44px);
+        font-family: $boldFont;
+      }
+
+      &__desc {
+        font-size: rem-calc(18px);
+        color: $dgreyColor;
+        font-family: $secondFont;
+        margin: rem-calc(35px) 0;
+        position: relative;
+        max-width: 458px; /*optimization for IE11*/
+      }
+
+      &__btn {
+        @extend .base-btn;
+        margin-bottom: rem-calc(50px);
+        //max-width: 225px;
+        padding-left: rem-calc(40px);
+        padding-right: rem-calc(40px);
+      }
+
+      &__adress {
+        font-size: rem-calc(18px);
+        font-family: $secondFont;
+        font-style: $italicFont;
+
+        .fas {
+          margin-right: 1em;
+        }
+      }
+    }
+  }
+}
+
+.inline-photo {
+  border: 1em solid #fff;
+  border-bottom: 4em solid #fff;
+  border-radius: 0.25em;
+  box-shadow: 1em 1em 2em 0.25em rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(4em) rotateZ(-5deg);
+  transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1),
+    opacity 0.3s 0.25s ease-out;
+  will-change: transform, opacity;
+
+  $.is-visible {
+    opacity: 1;
+    transform: rotateZ(-2deg);
+  }
+}

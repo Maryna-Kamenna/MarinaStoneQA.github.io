@@ -1,0 +1,56 @@
+.foot {
+  background-image: url("img/bg-footer.jpg");
+  background-color: $purpleColor;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $seaColor;
+  font-family: $mainFont;
+  font-weight: $textFontw;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 524px;
+  position: relative;
+
+  &__main-menu {
+    //height: 150px;
+    color: $whiteColor;
+  }
+
+  .main-menu {
+    &__container {
+      padding-top: 200px;
+
+      .menu {
+        &__icon {
+          margin-left: 40px;
+          width: 40px;
+          height: 40px;
+          border: solid 1px $purpleColor;
+          border-radius: 50%;
+          text-align: center;
+        }
+
+        &__icon > a {
+          text-decoration: none;
+          color: $whiteColor;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  &__credentials {
+    margin-top: 45px;
+    font-size: rem-calc(14px);
+
+    .start {
+      padding-right: 24px;
+      border-right: solid 1px $whiteBack;
+    }
+
+    .finish {
+      padding-left: 24px;
+    }
+  }
+}

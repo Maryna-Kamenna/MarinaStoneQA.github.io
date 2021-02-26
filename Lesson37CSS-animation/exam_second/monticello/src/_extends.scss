@@ -1,0 +1,23 @@
+.base-btn {
+  font-size: rem-calc(14px);
+  padding: rem-calc(17px) 0;
+  text-align: center;
+  box-sizing: border-box !important;
+  font-family: $mainFont;
+  border: solid 1px $darkColor;
+
+  &:hover {
+    background-color: $orangeColor;
+    color: $darkColor;
+  }
+
+  &:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+
+  &:active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+}

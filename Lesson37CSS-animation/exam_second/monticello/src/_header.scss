@@ -1,0 +1,195 @@
+.header {
+  background-image: url("img/bg-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $seaColor;
+  font-family: $mainFont;
+  font-weight: $textFontw;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 800px;
+  position: relative;
+
+  &__main-menu {
+    min-height: 150px;
+    color: $whiteColor;
+  }
+
+  .main-menu {
+    &__container {
+      /*style for IE11 */
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        padding-top: 25px !important;
+      }
+    }
+
+    &__left,
+    &__right {
+      position: relative;
+    }
+
+    &__logo {
+      font-family: $mainFont;
+      font-size: rem-calc(24px);
+      letter-spacing: 0.3rem;
+      margin: 0;
+
+      @include _767 {
+        padding: 0.5em 0;
+      }
+
+      @include _480 {
+        padding: 0.5em 0;
+      }
+    }
+
+    .menu {
+      padding-right: 0;
+      padding-left: 30px;
+
+      &__nav > li {
+        list-style-type: circle;
+      }
+
+      &__nav > li > a {
+        text-decoration: none;
+        color: $whiteColor;
+        outline: none;
+        position: relative;
+        font-size: rem-calc(14px);
+        font-weight: $textFontw;
+        font-family: $mainFont;
+        //padding-left: rem-calc(14px);
+        -webkit-transition: all 0.3s ease;
+      }
+
+      &__nav > li > a:hover,
+      &__nav > li > a:focus {
+        border-bottom: $orangeColor 2px solid;
+        text-decoration: none;
+        color: $whiteColor;
+        list-style-type: disc;
+      }
+
+      &__nav > li:hover,
+      &__nav > li:focus {
+        list-style-type: disc;
+      }
+
+      &__icon {
+        margin-left: 40px;
+        width: 40px;
+        height: 40px;
+        border: solid 1px $purpleColor;
+        border-radius: 50%;
+        text-align: center;
+      }
+
+      &__icon > a {
+        text-decoration: none;
+        color: $whiteColor;
+        outline: none;
+      }
+    }
+  }
+
+  .sliders {
+    &__container {
+      padding-top: 220px !important;
+      position: relative;
+
+      .slick-dots {
+        position: absolute;
+        z-index: 9;
+        top: 148px;
+        right: 0px;
+        list-style: none;
+        //display: flex;
+        // margin: 0 auto;
+        width: 20px;
+        padding: 0;
+        //justify-content: center;
+        //bottom: 50px;
+      }
+
+      .slick-dots button {
+        font-size: 0;
+        border-radius: 50%;
+        height: 13px;
+        width: 10px;
+        border: 1px solid $whiteColor;
+        margin-bottom: 43px;
+        background: none;
+        overflow: hidden;
+      }
+
+      .slick-dots .slick-active button {
+        background-color: $whiteColor;
+      }
+    }
+
+    &__slidername {
+      color: $whiteColor;
+      font-family: $mainFont;
+    }
+
+    .slidername {
+      &__title {
+        font-size: rem-calc(80px);
+        font-family: $boldFont;
+        font-weight: $titleFontw;
+        letter-spacing: 0.3rem;
+
+        @include _480 {
+          font-size: rem-calc(30px);
+          margin-bottom: rem-calc(10px);
+        }
+      }
+
+      &__subtitle {
+        font-size: rem-calc(18px);
+        font-weight: $textFontw;
+        letter-spacing: 0.4rem;
+        max-width: 60%;
+        text-align: center;
+        margin: 0 auto;
+        //margin-top: 40px;
+
+        @include _991 {
+          max-width: 100%;
+        }
+
+        @include _375 {
+          font-size: rem-calc(14px);
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+
+  &__scroll a {
+    color: $whiteColor;
+  }
+
+  &__scroll a:hover {
+    color: $whiteColor;
+    text-decoration: none;
+  }
+
+  &__scroll {
+    position: absolute;
+    //position: relative;
+    bottom: 50px;
+    right: 49%;
+    z-index: 100;
+  }
+
+  &__icon {
+    width: 45px;
+    height: 45px;
+    border: solid 1px $whiteColor;
+    border-radius: 50%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,46 @@
+@function rem-calc($font-size: 0) {
+  $remSize: $font-size/$baseFontSize;
+  @return #{$remSize}rem;
+}
+
+@mixin _375 {
+  @media screen and (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin _480 {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin _575 {
+  @media screen and (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin _767 {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin _991 {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin _1200 {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin _1350 {
+  @media screen and (max-width: 1350px) {
+    @content;
+  }
+}
