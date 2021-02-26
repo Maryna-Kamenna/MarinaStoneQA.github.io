@@ -71,9 +71,8 @@ body {
 }
 .back3 {
   transform: rotateY(180deg);
-  background-image: url(/img/joker.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-image: url(/img/3.jpg);
+  background-size: cover;
 }
 .card:hover .front,
 .card:hover .front1 {
@@ -90,4 +89,10 @@ span {
 }
 .red {
   color: red;
+}
+.logo {
+    font-size: 55px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
