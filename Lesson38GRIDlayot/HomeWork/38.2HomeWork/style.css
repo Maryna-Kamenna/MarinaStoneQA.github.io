@@ -1,0 +1,35 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 30px 30px;
+  grid-template-areas:
+    "first first first1 ."
+    "first first first1 ."
+    "first2 first3 first4 ."
+    "first2 first3 first4 ."
+    ". . . .";
+}
+
+.first {
+  grid-area: first;
+  background-image: url(./img/Layer8.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.first1 {
+  grid-area: first1;
+}
+
+.first2 {
+  grid-area: first2;
+}
+
+.first3 {
+  grid-area: first3;
+}
+
+.first4 {
+  grid-area: first4;
+}
