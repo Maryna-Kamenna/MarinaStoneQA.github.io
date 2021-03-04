@@ -1,0 +1,21 @@
+{
+  "name": "first-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "marina",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.6.0",
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.0",
+    "jquery": "^3.6.0",
+    "preprocess": "^3.2.0",
+    "preprocessor": "^1.4.0"
+  }
+}

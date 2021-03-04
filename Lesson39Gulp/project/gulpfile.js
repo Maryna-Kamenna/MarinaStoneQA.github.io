@@ -1,9 +1,7 @@
-
 const {src, dest, parallel, series, watch} = require('gulp');
-
 const brwSync = require('browser-sync').create();
-const sass = require('galp-sass');
-const concat = require('gulp-concat')
+const sass = require('gulp-sass');
+const concat = require('gulp-concat');
 
 
 function browserSync() {
@@ -14,16 +12,15 @@ function browserSync() {
     });
 }
 
-
-function styles(){
-    return src (['node_modules/jquery.min.js',
-        'app/styles/main.scss/'])
-
+function styles() {
+    return src ([
+        'node_modules/bootstrap/dist/css/bootstrap.min.css',
+        'app/styles/main.scss'
+    ])
         .pipe(sass())
         .pipe(concat('main.min.css'))
-        .pipie(dest('app/styless/css'))
+        .pipe(dest('app/styles/css'))
 }
-
 
 exports.brwSync = browserSync;
 exports.styles = styles;
