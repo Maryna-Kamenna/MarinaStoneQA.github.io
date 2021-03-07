@@ -1,0 +1,94 @@
+npm init
+
+npm i gulp --save-dev 
+
+создание папок app и dist
+
+// Определяем константы Gulp
+const { src, dest, parallel, series, watch } = require('gulp');
+
+
+npm i browser-sync --save-dev
+// Подключаем Browsersync
+const browserSync = require('browser-sync').create();
+
+function browsersync() {
+	browserSync.init({ // Инициализация Browsersync
+		server: { baseDir: 'app/' }, // Указываем папку сервера
+		notify: false, // Отключаем уведомления
+		online: true // Режим работы: true или false
+	})
+}
+
+
+exports.default = parallel(scripts, browsersync, startwatch);
+
+exports.browsersync = browsersync;
+
+npm i --save-dev gulp-sass
+
+const sass = require('gulp-sass');
+
+
+function styles() {
+	return src('') // Выбираем источник: "app/sass/main.sass" 
+	.pipe(eval(preprocessor)()) // Преобразуем значение переменной "preprocessor" в функцию
+	.pipe(concat('app.min.css')) // Конкатенируем в файл app.min.js
+	.pipe(dest('app/css/')) // Выгрузим результат в папку "app/css/"
+	.pipe(browserSync.stream()) // Сделаем инъекцию в браузер
+}
+
+	exports.styles = styles;
+
+
+function startwatch() {
+
+	// Мониторим файлы препроцессора на изменения
+	watch('app/**/*.scss', styles);
+ 
+}
+
+
+watch('app/**/*.html').on('change', browserSync.reload);
+
+
+npm i --save-dev gulp-imagemin gulp-newer del
+
+function images() {
+	return src('app/images/src/**/*') // Берём все изображения из папки источника
+	.pipe(newer('app/images/dest/')) // Проверяем, было ли изменено (сжато) изображение ранее
+	.pipe(imagemin()) // Сжимаем и оптимизируем изображеня
+	.pipe(dest('app/images/dest/')) // Выгружаем оптимизированные изображения в папку назначения
+}
+
+function cleanimg() {
+	return del('app/images/dest/**/*', { force: true }) // Удаляем всё содержимое папки "app/images/dest/"
+}
+
+watch('app/images/src/**/*', images);
+
+function buildcopy() {
+	return src([ // Выбираем нужные файлы
+		'app/css/**/*.min.css',
+		'app/images/dest/**/*',
+		'app/**/*.html',
+		], { base: 'app' }) // Параметр "base" сохраняет структуру проекта при копировании
+	.pipe(dest('dist')) // Выгружаем в папку с финальной сборкой
+}
+
+// Подключаем gulp-concat
+const concat = require('gulp-concat');
+ 
+
+function scripts() {
+	return src([ // Берём файлы из источников
+		'node_modules/jquery/dist/jquery.min.js', // Пример подключения библиотеки
+		'app/js/app.js', // Пользовательские скрипты, использующие библиотеку, должны быть подключены в конце
+		])
+	.pipe(concat('app.min.js')) // Конкатенируем в один файл
+	.pipe(dest('app/js/')) // Выгружаем готовый файл в папку назначения
+	.pipe(browserSync.stream()) // Триггерим Browsersync для обновления страницы
+}
+
+	exports.scripts = scripts;
+

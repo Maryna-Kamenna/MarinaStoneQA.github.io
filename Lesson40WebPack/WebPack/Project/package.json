@@ -1,0 +1,20 @@
+{
+  "name": "webpack_build",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "webpack --mode development",
+    "build:prod": "webpack --mode production",
+    "start": "webpack serve --open && webpack --watch"
+  },
+  "author": "Marina",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.2.0",
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

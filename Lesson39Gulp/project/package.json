@@ -11,11 +11,18 @@
   "devDependencies": {
     "bootstrap": "^4.6.0",
     "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
     "gulp-sass": "^4.1.0",
+    "gulp-uglifyjs": "^0.6.2",
     "jquery": "^3.6.0",
     "preprocess": "^3.2.0",
     "preprocessor": "^1.4.0"
+  },
+  "dependencies": {
+    "mincss": "^0.4.1"
   }
 }
