@@ -7,12 +7,20 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:dev": "webpack --mode development",
     "build:prod": "webpack --mode production",
-    "start": "webpack serve --open && webpack --watch"
+    "start": "webpack serve && webpack --watch"
   },
   "author": "Marina",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "css-loader": "^5.1.1",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.2.0",
+    "postcss-loader": "^5.1.0",
+    "precss": "^4.0.0",
+    "saas": "^1.0.0",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
     "webpack": "^5.24.3",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"
