@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form bindings</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="app">
+        <input
+          type="text" @input="changeColor(search.length)" v-model="search" :style="styles" placeholder="Search..."/>
+        <button @click="saveSearch">Save</button>
+        <br />
+        <div v-show="typeSearch">{{ typeSearch }}</div>
+        <hr />
+      </div>
+    </div>
+
+    <script>
+      var sample = new Vue({
+        el: "#app",
+        data: {
+          search: "",
+          typeSearch: "",
+          isTyped: false,
+          styles: {
+            background: "red",
+          },
+        },
+        methods: {
+          saveSearch() {
+            this.typeSearch = this.search;
+            this.search = "";
+            this.styles.background = "blue";
+          },
+          changeColor(count) {
+            if (count > 0) {
+              this.styles.background = "green";
+            } else {
+              this.styles.background = "red";
+            }
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

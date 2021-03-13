@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue lifecycle</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css bootstrap.min.css"integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            var sample = new Vue({
+                el: '#app',
+                data: {
+                counter: 0
+                },
+                methods: {
+                    updateClick: function () {
+                        this.counter++;
+                    }
+                },
+                beforeCreate: function () {
+                    console.log('Начало создания');
+                },
+                created: function () {
+                    console.log('Создан');
+                },
+                beforeMount: function () {
+                    console.log('Начало подключения');
+                },
+                mounted: function () {
+                    console.log('Подключение завершено');
+                },
+                beforeUpdate: function () {
+                    console.log('Начало обновления');
+                },
+                updated: function () {
+                    console.log('Обновлен');
+                },
+                beforeDestroy: function () {
+                    console.log('Начало удаления');
+                },
+                destroyed: function () {
+                    console.log('Удален');
+                }
+            });
+            document.getElementById('destroy').addEventListener('click', function () {
+                sample.$destroy();
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="app">
+            Счетчик: <span>{{ counter }}</span>
+            <br />
+            <button class="btn btn-success" v-on:click="updateClick">Добавить 1</button>
+            <br />
+            <br />
+        </div>
+
+        <button id="destroy" class="btn btn-danger">Удалить экземпляр</button>
+    </div>
+
+</body>
+
+</html>

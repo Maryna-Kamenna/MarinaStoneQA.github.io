@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vue instance</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        var sample = new Vue({
+          el: "#app",
+          data: {
+            x: 10,
+          },
+        });
+      };
+    </script>
+  </head>
+
+  <body>
+    <div id="app">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+        aspernatur?
+      </p>
+      {{x}}
+    </div>
+
+    <script type="text/javascript">
+      var sample = new Vue({
+          el: document.getElementById('app'),
+          data: {
+              x : 10,
+              age :5
+              name : 'test',
+              list : {efs:'sef'}
+          }
+      });
+    </script>
+  </body>
+</html>

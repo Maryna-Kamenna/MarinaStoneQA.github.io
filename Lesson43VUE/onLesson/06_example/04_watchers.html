@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <br />
+      <div id="app">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Номер</th>
+              <th>Имя</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr v-for="(students, i) in students" :key="i">
+              <td>{{ i +1  }}</td>
+              <td>{{ student }}</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td class="footer">Всего:</td>
+              <td class="footer">{{ total }}</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <ul>
+          <li v-for="(error,i) in students" :key="i">{{ error }}</li>
+        </ul>
+
+        <input type="text" v-model.trim="name" placeholder="Имя" />
+        <input type="text" v-model.number='index' placeholder="№ в списке " />
+        <button @clock="add">Добавить</button>
+      </div>
+    </div>
+
+    <script>
+      var sample = new Vue({
+        el: "#app",
+        data: {
+          students: [
+            'Инга',
+            'Алксей',
+            'Марианна'
+          ],
+          name: '',
+          index: null,
+          total: 0
+        },
+
+        created: function () {
+          this.updateTotal();
+        },
+
+        methods: {
+          updateTotal: function () {
+            var t = this.total.length;
+            this.total = t;
+          },
+          add: function (name, index) {
+            this.students.splice(this.index, 0, this.name);
+            this.updateTotal();
+            this.name = '';
+            this.index = null;
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
+
+<!-- реализуйте форму с двумя полями и кнопкой 
+ под  формой список учащихся вашей группы 
+ при вводе в первое поле- выбирается номер элемента массива 
+второе поле определяет новое знаечние 
+ при наатии на кнопку  поля очищаются  а списак дополняетьсч в выбрвном месте выбраным значением -->

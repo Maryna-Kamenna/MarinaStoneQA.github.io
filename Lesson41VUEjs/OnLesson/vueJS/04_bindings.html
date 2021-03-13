@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data binding</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var sample = new Vue({
+                el: '#app',
+                data: {
+                    name: 'Beetroot Academy',
+                    href: 'https://beetroot.academy/',
+                    link: '<a href="https://beetroot.academy/">Beetroot Academy</a>',
+                    firstStyle: {
+                        color: 'blue',
+                        fontFamily: 'Verdana',
+                        textAlign: 'center',
+                        border: '2px solid red'
+                    },
+                    btnClass: [
+                        'btn',
+                        'btn-primary'
+                    ]
+                }
+            });
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="app">
+        <p>{{name}}</p>
+        <p v-text="name"></p>
+        <hr>
+        <p>{{link}}</p>
+        <!--<p v-html="link"></p>-->
+        <hr>
+        <p v-bind:style="firstStyle">Lorem ipsum dolor sit amet.</p>
+        <hr>
+        <a :href="href" v-bind:class="btnClass">{{name}}</a>
+    </div>
+
+
+</body>
+
+</html>

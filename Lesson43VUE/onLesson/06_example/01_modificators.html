@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Data binding</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="app">
+        <div class="form-group">
+          <label for="searchInput" class="form-label">Поиск:</label>
+          <textarea
+            v-model.trim="Search"
+            placeholder="Ищем..."
+            id="searchInput"
+            type="search"
+            class="form-control"
+          ></textarea>
+          <p class="text-muted"><b>|</b>{{ Search }}<b>|</b></p>
+        </div>
+        <hr />
+        <div class="form-group">
+          <label for="resultInput" class="form-label">Введите число:</label>
+          <input
+            v-model.number="result"
+            placeholder="....."
+            id="resultInput"
+            class="form-control"
+          />
+          <p class="text-muted">{{ result }}</p>
+          <p class="text-muted">{{ resultType }}</p>
+        </div>
+        <hr />
+        <input v-model.lazy="lazy" placeholder="Поиск..." />
+        <br />
+        <div>Ищем: {{ lazy }}</div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var app = new Vue({
+        el: "#app",
+        data: {
+          Search: "",
+          result: "",
+          resultType: "",
+          lazy: "",
+        },
+        //Отслеживание изменений в текстовых полях
+        watch: {
+          result: function () {
+            var t = typeof this.result;
+            this.resultType = t;
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

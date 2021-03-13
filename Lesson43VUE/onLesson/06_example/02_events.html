@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var sample = new Vue({
+                el: '#app',
+                data: {
+                    preventHistory: '',
+                    captureHistory: '',
+                    stopHistory: '',
+                    selfHistory: '',
+                    onceHistory: ''
+                },
+                methods: {
+                    preventExecuteSearch: function () {
+                        this.preventHistory += 'Нажатие кнопки "Поиск".\n';
+                    },
+                    preventParentClick: function () {
+                        this.preventHistory += 'Нажатие родительского элемента кнопки "Поиск" .\n';
+                    },
+                    preventGrandparentClick: function () {
+                        this.preventHistory += 'Нажатие прародительского элемента кнопки "Поиск".\n';
+                    },
+                    clearPreventHistory: function () {
+                        this.preventHistory = '';
+                    },
+                    captureExecuteSearch: function () {
+                        this.captureHistory += 'Нажатие кнопки "Поиск".\n';
+                    },
+                    captureParentClick: function () {
+                        this.captureHistory += 'Нажатие родительского элемента кнопки "Поиск" .\n';
+                    },
+                    captureGrandparentClick: function () {
+                        this.captureHistory += 'Нажатие прародительского элемента кнопки "Поиск".\n';
+                    },
+                    clearCaptureHistory: function () {
+                        this.captureHistory = '';
+                    },
+                    stopExecuteSearch: function () {
+                        this.stopHistory += 'Нажатие кнопки "Поиск".\n';
+                    },
+                    stopParentClick: function () {
+                        this.stopHistory += 'Нажатие родительского элемента кнопки "Поиск" .\n';
+                    },
+                    stopGrandparentClick: function () {
+                        this.stopHistory += 'Нажатие прародительского элемента кнопки "Поиск".\n';
+                    },
+                    clearStopHistory: function () {
+                        this.stopHistory = '';
+                    },
+                    selfExecuteSearch: function () {
+                        this.selfHistory += 'Нажатие кнопки "Поиск".\n';
+                    },
+                    selfParentClick: function () {
+                        this.selfHistory += 'Нажатие родительского элемента кнопки "Поиск" .\n';
+                    },
+                    selfGrandparentClick: function () {
+                        this.selfHistory += 'Нажатие прародительского элемента кнопки "Поиск".\n';
+                    },
+                    clearSelfHistory: function () {
+                        this.selfHistory = '';
+                    },
+                    onceExecuteSearch: function () {
+                        this.onceHistory += 'Нажатие кнопки "Поиск".\n';
+                    },
+                    onceParentClick: function () {
+                        this.onceHistory += 'Нажатие родительского элемента кнопки "Поиск" .\n';
+                    },
+                    onceGrandparentClick: function () {
+                        this.onceHistory += 'Нажатие прародительского элемента кнопки "Поиск".\n';
+                    },
+                    clearOnceHistory: function () {
+                        this.onceHistory = '';
+                    }
+                }
+            });
+        }
+    </script>
+    <style type="text/css">
+        .parent,
+        .grandparent {
+            padding: 20px;
+            border: 2px solid #ccbfbf;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="app">
+            <form class="form-horizontal">
+                <p class="text-center">
+                    События и модификаторы
+                </p>
+                <div class="row text-center">
+                    <div class="col-xs-12 offset-lg-1 col-lg-2">
+                        <strong>Перехват</strong>
+                        <div class="grandparent" v-on:click.capture="captureGrandparentClick">
+                            <div class="form-group parent" v-on:click.capture="captureParentClick">
+                                <button v-on:click.capture="captureExecuteSearch" type="button"
+                                    class="btn btn-primary">Поиск</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-2">
+                        <strong>Prevent</strong>
+                        <div class="grandparent" v-on:click="preventGrandparentClick">
+                            <div class="form-group parent" v-on:click="preventParentClick">
+                                <button v-on:click.prevent="preventExecuteSearch" type="submit"
+                                    class="btn btn-primary">Поиск</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-lg-2">
+                        <strong>Stop</strong>
+                        <div class="grandparent" v-on:click.stop="stopGrandparentClick">
+                            <div class="form-group parent" v-on:click.stop="stopParentClick">
+                                <button v-on:click.stop="stopExecuteSearch" type="button"
+                                    class="btn btn-primary">Поиск</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-lg-2">
+                        <strong>Self</strong>
+                        <div class="grandparent" v-on:click.self="selfGrandparentClick">
+                            <div class="form-group parent" v-on:click="selfParentClick">
+                                <button v-on:click.self="selfExecuteSearch" type="button"
+                                    class="btn btn-primary">Поиск</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-lg-2">
+                        <strong>Once</strong>
+                        <div class="grandparent" v-on:click.once="onceGrandparentClick">
+                            <div class="form-group parent" v-on:click.once="onceParentClick">
+                                <button v-on:click.once="onceExecuteSearch" type="button"
+                                    class="btn btn-primary">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br />
+                <div class="row">
+                    <div class="col-xs-12 offset-lg-1 col-lg-2">
+                        <div class="form-group">
+                            <label for="logTextarea">Журнал событий (<a href="#"
+                                    v-on:click="clearCaptureHistory">Очистить</a>)</label>
+                            <textarea class="form-control" v-model="captureHistory" rows="8"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-lg-2">
+                        <div class="form-group">
+                            <label for="logTextarea">Журнал событий (<a href="#"
+                                    v-on:click="clearPreventHistory">Очистить</a>)</label>
+                            <textarea class="form-control" v-model="preventHistory" rows="8"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-lg-2">
+                        <div class="form-group">
+                            <label for="logTextarea">Журнал событий (<a href="#"
+                                    v-on:click="clearStopHistory">Очистить</a>)</label>
+                            <textarea class="form-control" v-model="stopHistory" rows="8"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-lg-2">
+                        <div class="form-group">
+                            <label for="logTextarea">Журнал событий <a href="#"
+                                    v-on:click="clearSelfHistory">Очистить</a></label>
+                            <textarea class="form-control" v-model="selfHistory" rows="8"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-lg-2">
+                        <div class="form-group">
+                            <label for="logTextarea">Журнал событий <a href="#"
+                                    v-on:click="clearOnceHistory">Очистить</a></label>
+                            <textarea class="form-control" v-model="onceHistory" rows="8"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

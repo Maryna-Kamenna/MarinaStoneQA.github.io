@@ -41,11 +41,9 @@ function minimization(){
     .pipe(newer('app/imgo/*', {force:true}))
 }
 
-
 function cleanimg(){
 return del ('app/imgo/*')
 }
-
 
 function build(){
     return src([
