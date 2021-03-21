@@ -16,29 +16,29 @@
         <div id="app">
             <input class="input-group" v-model="parentMessage">
             <br>
-            <component-d message="Some text"></component>
+            <component-d message="Some text"></component-d>
             <br />
-            <component-d :message="parentMessage"></component>
+            <component-d></componen-d>
         </div>
         <script>
             Vue.component('component-d', {
-                props: {
-                massage : {
+                props:  {
+                message : {
                     type: String,
                     required: true,
-                    default: 'Defaut messge'
+                    default: 'Default message'
                 }
             },
-             template: ' <span> </span> '
-            '
-        
+             template: '<span> {{ message }} </span>'
+            
+            })
             var sample = new Vue({
                 el: '#app',
                 data: {
                     parentMessage: ''
                 }
             })
-        }
+        
         </script>
     </div>
 </body>

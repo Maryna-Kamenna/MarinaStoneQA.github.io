@@ -1,0 +1,98 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.head {
+    position: absolute;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: initial;
+    margin: 0;
+    padding: 10px 15px;
+    align-items: center;
+    width: 95%;
+}
+
+
+.logo {font-size: 39px;}
+
+.nav {
+    display: flex;
+    list-style: none;
+}
+
+.slider .slide {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 100;
+    max-width: 700px;
+    margin: 0;
+}
+
+.description {
+    max-width: 510px;
+    font-size: 19px;
+    font-family: Arial;
+}
+
+.asction {
+    background-color: #eecd31;
+    border: 2px solid #eecd31;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+.slick-next, .slick-prev {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    z-index: 9;
+}
+
+.slick-next {
+    right: 40px;
+}
+
+.slick-prev {
+    left: 40px;
+}
+
+.slick-dots {
+    position: absolute;
+    z-index: 9;
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    bottom: 50px;
+}
+
+.slick-dots button {
+    font-size: 0;
+    border-radius: 62%;
+    height: 15px;
+    width: 15px;
+    border: 0;
+    margin-right: 10px;
+}
+
+.slick-dots .slick-active button {
+    background-color: red;
+}
+
+    

@@ -6,48 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
+
 
 <body>
     <div class="container">
         <div id="app">
-            <p class="container-fluid"> Общая сумма: {{ total }}</p>
-            <button-counter class="btn btn-info" v-on:increment="incrementTotal"></button-counter>
-            <button-counter class="btn btn-info" v-on:increment="incrementTotal"></button-counter>
-        </div>
-        <script>
-            Vue.component('button-counter', {
-                template: '<button v-on:click="incrementCounter">{{ counter }}</button>',
-                data: function () {
-                    return {
-                        counter: 0
-                    }
-                },
-                methods: {
-                    incrementCounter: function () {
-                        //this - ссылается на данный компонент
-                        this.counter += 1
-                        // Генерация события в дочернем компоненте.
-                        this.$emit('increment')
-                    }
-                },
-            })
-            var sample = new Vue({
-                el: '#app',
-                data: {
-                    total: 0
-                },
-                methods: {
-                    incrementTotal: function () {
-                        this.total += 1
-                    }
-                }
-            })
-        </script>
-    </div>
-</body>
+            <input type="text" class="form-control" v-model.trim.lazy="name"> 
+            <button class="btn btn-info" @click="getFilms">Search film</button>
 
+            <film-item 
+            v-for="(film, index) in films" 
+            :key="film.imdbID"
+            :name="film.Title"
+            :poster="film.Poster"
+            :year="film.Year"
+            @del-item="deleteFilm"
+            > 
+            </film-item>
+            </div>
+        </div>
+    <script src="scripts.js"></script>
+</body>
 </html>
