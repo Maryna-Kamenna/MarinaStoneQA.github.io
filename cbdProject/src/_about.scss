@@ -1,0 +1,98 @@
+.about {
+     margin-top: 100px;
+     height: 1000px;
+
+    &__logo {
+       display: flex;
+       justify-content: center;
+       position: relative;
+    }
+
+    &__h3 {
+        color: black;
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        position: absolute;
+        top: 10%;
+    }
+    &__img {
+        position: absolute;
+        bottom: 20%;
+    }
+    &__tab {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        background-color: #f1f1f1;
+        margin: 0 auto;
+        width: 70%;
+        height: 70px;
+    }
+    &__tablinks {
+        width: fit-content;
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        padding-bottom: 20px;
+        flex-wrap: nowrap;
+        background-color: inherit;
+        color: black;
+        padding: 22px 16px;
+        width: 75%;
+        border: none;
+        outline: none;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s;
+     
+    }
+
+    &__tablinks:hover {
+        background-color: #d0d5b0;
+    }
+
+    &__tablinks.active {
+        background-color: #d0d5b0;
+    }
+
+    &__tabcontent {
+        padding: 40px 0px;
+        width: 70%;
+        border-left: none;
+        height: 150px;
+        margin: 0 auto;
+       
+    }
+    &__whatfirst {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__image {
+        padding-bottom: 20px;
+    }
+
+    &__title {
+        font-family: 'Oswald', sans-serif;
+        width: fit-content;
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: #1c1c1b;
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+
+    &__what {
+        font-family: 'Oswald', sans-serif;
+        font-size: 22px;
+        color: #d0d5b0;
+        font-weight: 300;
+        letter-spacing: 0.3em;
+    }
+}

@@ -1,0 +1,29 @@
+.frequently {
+
+&__title {
+}
+
+&__question::-webkit-details-marker {
+    display: none;
+}
+
+&__question [open] > summary::before {
+    content: '\25BC';
+  }
+
+&__question::before {
+    content: '\25B6';
+    padding-right: 0.5em;
+  }
+
+&__more {
+    display: block;
+}
+}
+
+  
+
+  
+
+
+

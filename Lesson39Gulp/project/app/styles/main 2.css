@@ -1,0 +1,22 @@
+body p {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Frequently_asked_questions {
+  font-size: 30px;
+  font-family: "Oswald";
+  color: #212221;
+  text-transform: uppercase;
+  line-height: 2.5;
+  text-align: center;
+  position: absolute;
+  left: 674.165px;
+  top: 3316.828px;
+  width: 553px;
+  height: 24px;
+  z-index: 70;
+}

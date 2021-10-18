@@ -1,40 +1,39 @@
-
-.body {
-  max-width: 1770px;
+* html body {
+  width: 1770px;
   margin: 0 auto;
-
+  font-size: 16px;
+}
 
 .wrapper {
   overflow: hidden;
-  min-width: 1200px;
+  max-width: 69.4rem;
   margin: 0 auto;
 }
 
 .main {
-  width: 100%;
-  min-height: 82vh;
+  width: 69.4rem;
+  height: 82vh;
   background-image: url(img/bg1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
-
   &__h1 {
     color: rgb(255, 255, 255);
     font-family: $baseFont;
-    font-size:rem-calc(48px);
+    font-size: rem-calc(48px);
     font-weight: 700;
     line-height: 26px;
     text-align: center;
     justify-content: center;
     position: relative;
     top: 100px;
-  @include _992 {
+    @include _992 {
       font-size: rem-calc(58px);
     }
-  @include _768 {
+    @include _768 {
       font-size: rem-calc(70px);
-  }
+    }
   }
 
   &__h2 {
@@ -48,12 +47,12 @@
     position: relative;
     top: 170px;
 
-  @include _992 {
+    @include _992 {
       font-size: rem-calc(32px);
     }
-  @include _768 {
+    @include _768 {
       font-size: rem-calc(42px);
-  }
+    }
   }
 
   &__form {
@@ -66,7 +65,7 @@
 
   &__search {
     width: 26vw;
-    height: 3,5vh;
+    height: 3, 5vh;
     background-color: #ffffff;
     border: 2px solid #ffffff;
     padding: 0;
@@ -93,12 +92,12 @@
     font-family: $baseFont;
     font-size: rem-calc(14px);
     font-weight: 400;
-  @include _992 {
+    @include _992 {
       font-size: rem-calc(38px);
     }
-  @include _768 {
+    @include _768 {
       display: none;
-  }
+    }
   }
 
   &__scr {
@@ -130,18 +129,18 @@
     top: 31px;
     z-index: 50;
     padding-left: 30px;
-@include _992{
-  color: #ffffff;
-  font-family: $baseFont;
-  font-size:rem-calc(44px);
-  font-weight: 700;
-  text-align: center;
-}
-@include _768{
-  width: 100%;
-  justify-content: center;
-  text-align: center;
-  }
+    @include _992 {
+      color: #ffffff;
+      font-family: $baseFont;
+      font-size: rem-calc(44px);
+      font-weight: 700;
+      text-align: center;
+    }
+    @include _768 {
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+    }
   }
 
   &__list {
@@ -155,10 +154,10 @@
     font-family: "Aleo", sans-serif;
     font-size: rem-calc(14px);
     font-weight: 400;
-@include _992 {
+    @include _992 {
       display: none;
     }
-@include _768 {
+    @include _768 {
       position: absolute;
       visibility: hidden;
       width: 100%;
@@ -322,7 +321,7 @@
 
   &__battn {
     width: 2.25vw;
-    height: 0.60vh;
+    height: 0.6vh;
     background-color: #5474fd;
   }
 }
@@ -339,16 +338,16 @@
     position: relative;
     top: 131px;
     left: -15px;
-    width: 3.50vw;
-    height: 2.20vh;
+    width: 3.5vw;
+    height: 2.2vh;
   }
 
   &__mountain {
     position: relative;
     top: 146px;
     left: 100px;
-    width: 3.50vw;
-    height: 2.20vh;
+    width: 3.5vw;
+    height: 2.2vh;
   }
 }
 
@@ -383,7 +382,7 @@
     height: 0.96vh;
     color: #e8e8e8;
     font-family: "Aleo", sans-serif;
-    font-size:rem-calc(36px);
+    font-size: rem-calc(36px);
     font-weight: 400;
   }
 
@@ -396,7 +395,7 @@
     width: 0.96vw;
     height: 0.96vh;
     color: #e8e8e8;
-    font-family: 'Aleo', sans-serif;
+    font-family: "Aleo", sans-serif;
     font-size: rem-calc(36px);
     font-weight: 400;
   }
@@ -408,7 +407,7 @@
   &__icon::after {
     content: "";
     width: 19.8%;
-    height: 28,1%;
+    height: 28, 1%;
     background: transparent;
     border: none;
     border-radius: 48%;
@@ -488,7 +487,7 @@
   &__h4 {
     color: #e8e8e8;
     font-family: $baseFont;
-    font-size:rem-calc(20px);
+    font-size: rem-calc(20px);
     font-weight: 400;
     padding-bottom: 15px;
   }
@@ -499,7 +498,7 @@
     background-color: #5474fd;
     color: #ffffff;
     font-family: Aleo;
-    font-size: rem-calc(16px);;
+    font-size: rem-calc(16px);
     font-weight: 400;
     letter-spacing: 1.2px;
   }
@@ -578,7 +577,7 @@
     text-align: left;
   }
 
-  &__h6{
+  &__h6 {
     color: #fefefe;
     font-family: $baseFont;
     font-size: rem-calc(20px);
@@ -586,45 +585,44 @@
   }
 
   .quote::first-letter {
-    color:#5474fd;;
+    color: #5474fd;
     font-size: rem-calc(36px);
   }
-  &__quote{
+  &__quote {
     color: #e8e8e8;
     font-family: $baseFont;
     font-size: rem-calc(16px);
   }
-  }
+}
 
-.footer{
-    width: 100%;
-    min-height: 268px;
-    background-color: #232323;
-    justify-content: center;
-    align-items: center;
+.footer {
+  width: 100%;
+  min-height: 268px;
+  background-color: #232323;
+  justify-content: center;
+  align-items: center;
 
-    &__h7 {
+  &__h7 {
     color: #ffffff;
     font-family: $baseFont;
-    font-size:rem-calc(24px);
+    font-size: rem-calc(24px);
     font-weight: 700;
     letter-spacing: 3.36px;
     padding-bottom: 15px;
-    }
+  }
 
-    &__h8 {
+  &__h8 {
     color: #ffffff;
     font-family: $baseFont;
-    font-size:rem-calc(16px);
+    font-size: rem-calc(16px);
     font-weight: 400;
     letter-spacing: 1.6px;
     padding-bottom: 20px;
-    }
+  }
 
-    &__sosial {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 32px;
-    }
-    }
+  &__sosial {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+  }
 }

@@ -1,0 +1,123 @@
+.header {
+  background-image: url("/images/head.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  &__menu {
+    background-image: url('/images/Transparent.png');
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 300;
+    font-size: 13px;
+    color: white;
+    padding: 2%;
+    width: 100%;
+    position: fixed;
+
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+  }
+
+  &__item {
+    font-size: 16px;
+    padding-right: 40px;
+  }
+
+  &__item:hover {
+    transform: scale(1.5);
+    text-decoration: line-through;
+  }
+
+  &__link {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+  }
+
+  &__item-cbd {
+    font-size: 30px;
+    transform: scale(1.5);
+    padding-left: 80px;
+    padding-right: 120px;
+  }
+
+  .intro {
+    max-width: 927px;
+    text-align: right;
+    margin: auto;
+    padding-top: 310px;
+
+    &__h2 {
+      margin-bottom: 43px;
+      font-size: 55px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: white;
+    }
+
+    &__p {
+      font-size: 24px;
+      font-weight: 300;
+      color: white;
+      margin-bottom: 55px;
+    }
+
+    &__button {
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: white;
+      background-color: transparent;
+      border: 1px solid #9db892;
+      padding: 25px 40px;
+      margin-bottom: 28px;
+      cursor: pointer;
+    }
+
+    &__link-link {
+      list-style-type: none;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+
+    &__vertical {
+      position: absolute;
+      left: -4%;
+      bottom: 18%;
+      transform: rotate(270deg);
+      display: flex;
+      align-items: center;
+    }
+
+    &__line {
+      height: 2px;
+      width: 107px;
+      background-color: white;
+      margin-right: 30px;
+    }
+
+    &__text {
+      font-size: 26px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+    &__doun {
+      width: fit-content;
+      text-align: center;
+      margin: 100px auto 0;
+      padding-bottom: 60px;
+    }
+  }
+}
