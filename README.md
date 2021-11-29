@@ -1,2 +1,1 @@
-# MarinaStoneQA.github.io
-СV Kamenna hosting
+# Front End Developer  my stady at BeetRoot Academy
